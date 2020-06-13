@@ -110,6 +110,11 @@ function crear_directorio
 	cp -r "docs"  "$GRUPO/BACKUPs"
 	cp -r "inst"  "$GRUPO/BACKUPs"
 
+	if [ -f "GRUPO/BACKUPs/inst/instalador.log" ]
+	then
+		rm "GRUPO/BACKUPs/inst/instalador.log"
+	fi
+
 	rm -rf "scripts"
 	rm -rf "tablas_cpr"
 	rm -rf "docs"
@@ -155,7 +160,7 @@ function validar_hora {
 
 	while [ $hora_valida == 0 ]
 	do
-		if [ $h_cierre -ge 0 ] && [ ${#hora_cierre} -eq 6 ]
+		if [ $h_cierre -ge 0 ] && [ ${#h_cierre} -eq 6 ]
 		then
 		let "hora_cierre_hh=$hora_cierre / 10000"
 		let "hora_cierre_aux=$hora_cierre % 10000"
@@ -255,12 +260,15 @@ function preparar_reinstalacion
        [ -f "$GRUPO/BACKUPs/tablas_cpr/Tabla_provincias.csv" ] && [ -f "$GRUPO/BACKUPs/tablas_cpr/Tabla_respuesta_gateway.csv" ] &&
        [ -d "$GRUPO/BACKUPs/docs" ] && [ -d "$GRUPO/BACKUPs/pruebas" ]
 	then
-
 		loguearINFO "Se remueven todos los directorios y se recupera el BACKUP" "preparar_reinstalacion"
-		
-		local directorios=($(ls -1 "$GRUPO"))
 
-		for dir in "${directorios[@]}"
+		IFS=$'\n'
+
+		mv "$GRUPO/inst/instalador.log" "$GRUPO/BACKUPs/inst/instalador.log"
+
+		ls -1 $GRUPO >>"$GRUPO/inst/aux.dat"
+
+		for dir in $( <"$GRUPO/inst/aux.dat")
 		do
 			if [[ "$dir" != "BACKUPs" ]]
 			then
@@ -625,8 +633,8 @@ function mostrar_directorio
 	echo -e "\tDirectorio de ejecutables:          $DIRBIN" >> $dir_log
 	echo -e "\tScript proceso:                     $DIRBIN/proceso.sh" >> $dir_log
 	echo -e "\tScript inicializador:               $DIRBIN/inicializador.sh" >> $dir_log
-	echo -e "\tScript stop:               		   ""$DIRBIN/stop.sh" >> $dir_log
-	echo -e "\tScript start:               		   ""$DIRBIN/start.sh" >> $dir_log
+	echo -e "\tScript stop:                        $DIRBIN/stop.sh" >> $dir_log
+	echo -e "\tScript start:                       $DIRBIN/start.sh" >> $dir_log
 	echo -e "\tDirectorio de tablas:               $DIRTAB" >> $dir_log
 	echo -e "\tTabla de Comercios:                 $DIRTAB/Tabla_comercio.csv" >> $dir_log
 	echo -e "\tTabla de provincias:                $DIRTAB/Tabla_provincias.csv" >> $dir_log
