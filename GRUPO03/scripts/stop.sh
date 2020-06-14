@@ -1,8 +1,22 @@
 #!/bin/bash
 
+#												.:FUNIONES:.
+
+#Esta funcion loguea mensajes de tipo INFO, recibe dos parametros que son el mensaje y a la que pertenece el mensaje
+function loguearINFO()
+{
+	local fecha=`date +%Y-%m-%d"  "%T`
+	local linea="[ "$fecha" ]-INF-"$1"-"$2
+	echo $linea >> "$DIRPROC/proceso.log"
+	return 0
+}
+
+#											.:STOP:.
+
+#Este script se engarga de hacerle un kill al proceso si este esta corriendo
 if [ $# -ne 0 ]
 then
-	echo "Error: Este proceso no recive parametros."
+	echo "Error: El stop no recibe parametros."
 else
 
 	if [[ $HAYAMBIENTE == "" ]] 
@@ -17,7 +31,11 @@ else
 		then
 			kill $PROCESOID
 			echo "El proceso con id "$PROCESOID" fue terminado."
+
+			loguearINFO "El proceso con id "$PROCESOID" fue detenido con el comando stop." "stop"
+
 			PROCESOID=""
+
 		else
 			echo "No hay proceso corriendo."
 		fi
