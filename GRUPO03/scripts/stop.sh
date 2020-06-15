@@ -5,19 +5,30 @@
 #Esta funcion loguea mensajes de tipo INFO, recibe dos parametros que son el mensaje y a la que pertenece el mensaje
 function loguearINFO()
 {
+	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/roceso.log" ]
+	then
+		dir_log="$DIRPROC/proceso.log"
+		cat "$dir_actual/proceso.log" >> "$dir_log"
+		rm "$dir_actual/proceso.log"
+	elif [ ! -d "$DIRPROC" ]
+	then
+		dir_log="$dir_actual/proceso.log"
+	else
+		dir_log="$DIRPROC/proceso.log"
+	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
-	echo $linea >> "$DIRPROC/inicializador.log"
+	echo -e $linea"\n" >> "$dir_log"
 	return 0
 }
-
-
-
 
 
 #											.:STOP:.
 
 #Este script se engarga de hacerle un kill al proceso si este esta corriendo
+
+dir_actual=$PWD
+
 if [ $# -ne 0 ]
 then
 	echo "Error: El stop no recibe parametros."
@@ -47,3 +58,5 @@ else
 		fi
 	fi
 fi
+
+echo -e "\n" >> $dir_log

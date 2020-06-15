@@ -246,7 +246,7 @@ else
 
 
 	loguearINFO "Verificando que el ambiente no se haya roto" "start"
-	echo "Verificando que el ambiente no se haya roto:"
+	echo -e "\nVerificando que el ambiente no se haya roto:"
 
 	instalado
 
@@ -255,8 +255,8 @@ else
 	if [ $opcion -eq 0 ]
 	then
 		loguearALE "Instalacion rota, se cierra start y se indica al usuario como reparar al sistema" "start"
-		echo "La instalacion esta rota, repararla con ejecutando en el directorio inst:"
-		echo -e "./instalador.sh -r"
+		echo -e "\nLa instalacion esta rota, repararla ejecutandoel instalador en el directorio inst:"
+		echo -e "\n\t./instalador.sh -r"
 
 	elif [[ $HAYAMBIENTE == "" ]] && [ $opcion -eq 1 ]
 	then
@@ -316,3 +316,5 @@ else
 		fi
 	fi
 fi
+
+echo -e "\n" >> $dir_log

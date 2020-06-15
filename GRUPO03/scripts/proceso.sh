@@ -865,29 +865,63 @@ function ajustar_fecha ()
 
 }
 
+#Esta funcion loguea mensajes de tipo ERROR, recibe dos parametros que son el mensaje y a la que pertenece el mensaje
 function loguearERROR()
-{
+{	
+	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/inicializador.log" ]
+	then
+		dir_log="$DIRPROC/inicializador.log"
+		cat "$dir_actual/inicializador.log" >> "$dir_log"
+		rm "$dir_actual/inicializador.log"
+	elif [ ! -d "$DIRPROC" ]
+	then
+		dir_log="$dir_actual/inicializador.log"
+	else
+		dir_log="$DIRPROC/inicializador.log"
+	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-ERR-"$1"-"$2
 
-	echo -e "$linea\n" >> "$dir_log"
+	echo -e $linea"\n" >> "$dir_log"
 	return 0
 }
-
+#Esta funcion loguea mensajes de tipo INFO, recibe dos parametros que son el mensaje y a la que pertenece el mensaje
 function loguearINFO()
 {
+	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/inicializador.log" ]
+	then
+		dir_log="$DIRPROC/inicializador.log"
+		cat "$dir_actual/inicializador.log" >> "$dir_log"
+		rm "$dir_actual/inicializador.log"
+	elif [ ! -d "$DIRPROC" ]
+	then
+		dir_log="$dir_actual/inicializador.log"
+	else
+		dir_log="$DIRPROC/inicializador.log"
+	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
-	echo -e  "$linea\n" >> "$dir_log"
+	echo -e $linea"\n" >> "$dir_log"
 	return 0
 }
-
+#Esta funcion loguea mensajes de tipo ALERTA, recibe dos parametros que son el mensaje y a la que pertenece el mensaje
 function loguearALE()
 {
+	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/inicializador.log" ]
+	then
+		dir_log="$DIRPROC/inicializador.log"
+		cat "$dir_actual/inicializador.log" >> "$dir_log"
+		rm "$dir_actual/inicializador.log"
+	elif [ ! -d "$DIRPROC" ]
+	then
+		dir_log="$dir_actual/inicializador.log"
+	else
+		dir_log="$DIRPROC/inicializador.log"
+	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
 
-	echo -e "$linea\n" >> "$dir_log"
+	echo -e $linea"\n" >> "$dir_log"
 	return 0
 }
 
@@ -895,7 +929,7 @@ function loguearALE()
 
 #										.:proceso:.
 
-dir_log="proceso.log"
+dir_actual=$PWD
 
 loguearINFO "EL PROCESO INICIA" "proceso"
 
@@ -907,6 +941,7 @@ then
 	loguearERROR "Este proceso no recibe parametros" "proceso"
 	loguearINFO "FIN DEL PROCESO" "proceso"
 	echo "Error: este proceso no recibe parametros"
+	echo -e "\n" >> $dir_log
 	exit 1
 fi
 
@@ -918,6 +953,7 @@ then
 	loguearERROR "Este proceso solo se puede lanzar por el comando start,el proceso se va a cerrar" "proceso"
 	loguearINFO "FIN DEL PROCESO" "proceso"
 	echo "Error: solo el comando start puede arrancar al proceso"
+	echo -e "\n" >> $dir_log
 	exit 1
 fi
 
@@ -936,6 +972,7 @@ then
 	echo "No hay ambiente para ejecutar el proceso. Por favor ejecute el inicializador para levantar el ambiente."
 	echo "Para ejecutar el ambiente vaya al directorio de ejecutables y ejecute:"
 	echo -e "\n\t. ./inicializar.sh"
+	echo -e "\n" >> $dir_log
 	exit 1
 fi
 
@@ -986,3 +1023,5 @@ done
 loguearINFO "El proceso alcanzo las 10000 iteraciones. Por esta razon se cerrara exitosamente" "proceso"
 
 loguearINFO "FIN DEL PROCESO" "proceso"
+
+echo -e "\n" >> $dir_log
