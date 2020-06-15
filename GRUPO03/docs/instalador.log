@@ -437,3 +437,26 @@
 
 
 
+[ 2020-06-14 21:26:21 ]-INF-Empieza Instalador-instalador
+[ 2020-06-14 21:26:21 ]-INF-El instalador no recibio ningun parametro-instalador
+[ 2020-06-14 21:26:21 ]-INF-Se verifica si el sistema ya se instalo-instalador
+[ 2020-06-14 21:26:21 ]-INF-Se comprueba si el sistema necesita reparacion-necesita_reparar
+[ 2020-06-14 21:26:21 ]-INF-El sistema ya fue instalado pero se lo necesita reparar, se le indica al usuario como hacerlo-instalador
+[ 2020-06-14 21:26:21 ]-INF-FIN DEL SCRIPT-instalador
+
+
+
+[ 2020-06-14 21:26:24 ]-INF-Empieza Instalador-instalador
+[ 2020-06-14 21:26:24 ]-INF-Se recibio como parametro '-r'-instalador
+[ 2020-06-14 21:26:24 ]-INF-Verificamos si el sistema ya se instalo-instalador
+[ 2020-06-14 21:26:24 ]-INF-Restauramos el sistema-instalador
+[ 2020-06-14 21:26:24 ]-INF-Se comprueba si el instalador.conf existe-restaurar
+[ 2020-06-14 21:26:24 ]-INF-Se comprueba las tablas, los directorios y los scripts existen-restaurar
+[ 2020-06-14 21:26:24 ]-INF-La tabla de comercios no se encuentra en la carpeta tab, se la va a tratar de recuperar-restaurar
+[ 2020-06-14 21:26:24 ]-INF-La tabla de comercios no pudo ser recuperada, el sistema no se puede recuperar-restaurar
+[ 2020-06-14 21:26:24 ]-INF-El sistema no puede repararse. Se requerira que el usuario se descargue un paquete nuevo e instale el sistema con el-instalador
+[ 2020-06-14 21:26:24 ]-INF-Seguir pasos del README.-instalador
+[ 2020-06-14 21:26:24 ]-INF-FIN DEL SCRIPT-instalador
+
+
+
