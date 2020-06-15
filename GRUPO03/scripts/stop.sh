@@ -5,7 +5,7 @@
 #Esta funcion loguea mensajes de tipo INFO, recibe dos parametros que son el mensaje y a la que pertenece el mensaje
 function loguearINFO()
 {
-	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/roceso.log" ]
+	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/proceso.log" ]
 	then
 		dir_log="$DIRPROC/proceso.log"
 		cat "$dir_actual/proceso.log" >> "$dir_log"
@@ -18,7 +18,7 @@ function loguearINFO()
 	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
-	echo -e $linea"\n" >> "$dir_log"
+	echo -e $linea"\n" >> $dir_log
 	return 0
 }
 
@@ -26,8 +26,19 @@ function loguearINFO()
 #											.:STOP:.
 
 #Este script se engarga de hacerle un kill al proceso si este esta corriendo
+dir_actual="$PWD"
 
-dir_actual=$PWD
+if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/proceso.log" ]
+	then
+	dir_log="$DIRPROC/proceso.log"
+	cat "$dir_actual/proceso.log" >> "$dir_log"
+	rm "$dir_actual/proceso.log"
+elif [ ! -d "$DIRPROC" ]
+then
+	dir_log="$dir_actual/proceso.log"
+else
+	dir_log="$DIRPROC/proceso.log"
+fi
 
 if [ $# -ne 0 ]
 then
@@ -48,8 +59,6 @@ else
 			echo "El proceso con id "$PROCESOID" fue terminado."
 
 			loguearINFO "El proceso con id "$PROCESOID" fue detenido con el comando stop." "stop"
-
-			echo -e "\n" >> "$DIRPROC/proceso.log"
 
 			PROCESOID=""
 

@@ -157,6 +157,11 @@ function validar_hora {
 
 	hora_cierre=`echo $h_cierre | sed 's/^0*//'`
 
+	if [[ $hora_cierre == "" ]]
+	then
+		hora_cierre=0
+	fi
+
 
 	while [ $hora_valida == 0 ]
 	do

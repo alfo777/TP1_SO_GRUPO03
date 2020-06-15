@@ -868,16 +868,16 @@ function ajustar_fecha ()
 #Esta funcion loguea mensajes de tipo ERROR, recibe dos parametros que son el mensaje y a la que pertenece el mensaje
 function loguearERROR()
 {	
-	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/inicializador.log" ]
+	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/proceso.log" ]
 	then
-		dir_log="$DIRPROC/inicializador.log"
-		cat "$dir_actual/inicializador.log" >> "$dir_log"
-		rm "$dir_actual/inicializador.log"
+		dir_log="$DIRPROC/proceso.log"
+		cat "$dir_actual/proceso.log" >> "$dir_log"
+		rm "$dir_actual/proceso.log"
 	elif [ ! -d "$DIRPROC" ]
 	then
-		dir_log="$dir_actual/inicializador.log"
+		dir_log="$dir_actual/proceso.log"
 	else
-		dir_log="$DIRPROC/inicializador.log"
+		dir_log="$DIRPROC/proceso.log"
 	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-ERR-"$1"-"$2
@@ -888,16 +888,16 @@ function loguearERROR()
 #Esta funcion loguea mensajes de tipo INFO, recibe dos parametros que son el mensaje y a la que pertenece el mensaje
 function loguearINFO()
 {
-	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/inicializador.log" ]
+	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/proceso.log" ]
 	then
-		dir_log="$DIRPROC/inicializador.log"
-		cat "$dir_actual/inicializador.log" >> "$dir_log"
-		rm "$dir_actual/inicializador.log"
+		dir_log="$DIRPROC/proceso.log"
+		cat "$dir_actual/proceso.log" >> "$dir_log"
+		rm "$dir_actual/proceso.log"
 	elif [ ! -d "$DIRPROC" ]
 	then
-		dir_log="$dir_actual/inicializador.log"
+		dir_log="$dir_actual/proceso.log"
 	else
-		dir_log="$DIRPROC/inicializador.log"
+		dir_log="$DIRPROC/proceso.log"
 	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
@@ -907,16 +907,16 @@ function loguearINFO()
 #Esta funcion loguea mensajes de tipo ALERTA, recibe dos parametros que son el mensaje y a la que pertenece el mensaje
 function loguearALE()
 {
-	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/inicializador.log" ]
+	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/proceso.log" ]
 	then
-		dir_log="$DIRPROC/inicializador.log"
-		cat "$dir_actual/inicializador.log" >> "$dir_log"
-		rm "$dir_actual/inicializador.log"
+		dir_log="$DIRPROC/proceso.log"
+		cat "$dir_actual/proceso.log" >> "$dir_log"
+		rm "$dir_actual/proceso.log"
 	elif [ ! -d "$DIRPROC" ]
 	then
-		dir_log="$dir_actual/inicializador.log"
+		dir_log="$dir_actual/proceso.log"
 	else
-		dir_log="$DIRPROC/inicializador.log"
+		dir_log="$DIRPROC/proceso.log"
 	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
@@ -950,7 +950,7 @@ loguearINFO "Segundo se verifica que se lanzo con el comando start" "proceso"
 
 if [[ $HAYSTART == "" ]]
 then
-	loguearERROR "Este proceso solo se puede lanzar por el comando start,el proceso se va a cerrar" "proceso"
+	loguearERROR "Este proceso no se lanzo con el comando start,el proceso se va a cerrar" "proceso"
 	loguearINFO "FIN DEL PROCESO" "proceso"
 	echo "Error: solo el comando start puede arrancar al proceso"
 	echo -e "\n" >> $dir_log

@@ -1,0 +1,16 @@
+[ 2020-06-15 17:48:35 ]-INF-EL PROCESO INICIA-proceso
+
+[ 2020-06-15 17:48:35 ]-INF-Primero se verifica que no se recibieron parametros-proceso
+
+[ 2020-06-15 17:48:35 ]-INF-No se recibieron parametros-proceso
+
+[ 2020-06-15 17:48:35 ]-INF-Segundo se verifica que se lanzo con el comando start-proceso
+
+[ 2020-06-15 17:48:35 ]-ERR-Este proceso no se lanzo con el comando start,el proceso se va a cerrar-proceso
+
+[ 2020-06-15 17:48:35 ]-INF-FIN DEL PROCESO-proceso
+
+
+
+
+
