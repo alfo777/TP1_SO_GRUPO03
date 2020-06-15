@@ -7,9 +7,13 @@ function loguearINFO()
 {
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
-	echo $linea >> "$DIRPROC/proceso.log"
+	echo $linea >> "$DIRPROC/inicializador.log"
 	return 0
 }
+
+
+
+
 
 #											.:STOP:.
 
@@ -33,6 +37,8 @@ else
 			echo "El proceso con id "$PROCESOID" fue terminado."
 
 			loguearINFO "El proceso con id "$PROCESOID" fue detenido con el comando stop." "stop"
+
+			echo -e "\n" >> "$DIRPROC/proceso.log"
 
 			PROCESOID=""
 

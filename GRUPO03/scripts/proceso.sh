@@ -69,6 +69,7 @@ function procesar_novedades
 		else
 
 			loguearINFO "El archivo "$archivo_novedad_i" no cumple algunas de las condiciones, sera rechazado" "procesar_novedades"
+
 			mv "$archivo_novedad_i" "$DIRNOK"
 			rechazados="$rechazados"" ""$archivo_novedad_i"
 		fi
@@ -222,6 +223,7 @@ function validar_codigo_comercio()
 	local codigo
 	local estado_comercio
 	local linea_i
+
 
 	IFS=$'\n'
 

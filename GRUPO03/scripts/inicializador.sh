@@ -158,7 +158,7 @@ function instalado
 		op=3
 	fi
 
-	cd "$DIRBIN"
+	cd "$dir_actual"
 	return $op
 }
 
@@ -313,6 +313,8 @@ function loguearERROR()
 	elif [ ! -d "$DIRPROC" ]
 	then
 		dir_log="$dir_actual/inicializador.log"
+	else
+		dir_log="$DIRPROC/inicializador.log"
 	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-ERR-"$1"-"$2
@@ -331,6 +333,8 @@ function loguearINFO()
 	elif [ ! -d "$DIRPROC" ]
 	then
 		dir_log="$dir_actual/inicializador.log"
+	else
+		dir_log="$DIRPROC/inicializador.log"
 	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
@@ -348,6 +352,8 @@ function loguearALE()
 	elif [ ! -d "$DIRPROC" ]
 	then
 		dir_log="$dir_actual/inicializador.log"
+	else
+		dir_log="$DIRPROC/inicializador.log"
 	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
