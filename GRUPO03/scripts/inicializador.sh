@@ -23,12 +23,18 @@ function instalado
        [ -d "$GRUPO/docs" ] && [ -d "$GRUPO/pruebas" ]
 	then
 		loguearINFO "El estado del sistema es el estado inicial, el sistema no esta instalado" "instalado"
-		return -1
+		return 3
 	fi
 
-	cd "inst"
+
+	if [ ! -d "$GRUPO/inst" ]
+	then
+		return 3
+	fi
 
 	local op=1
+
+	cd "$GRUPO/inst"
 
 	loguearINFO "Comprobado que el sistema no esta en su estado inicial se busca el archivo de configuracion" "instalado"
 
@@ -149,7 +155,7 @@ function instalado
 	else
 		loguearALE "No se encontro el archivo de configuracion" "instalado"
 		echo -e "\n\tNo se encontro el archivo de configuracion."
-		op=-1
+		op=3
 	fi
 
 	cd "$DIRBIN"
@@ -298,28 +304,55 @@ function ingresarSiNo
 
 #Esta funcion loguea mensajes de tipo ERROR, recibe dos parametros que son el mensaje y a la que pertenece el mensaje
 function loguearERROR()
-{
+{	
+	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/inicializador.log" ]
+	then
+		dir_log="$DIRPROC/inicializador.log"
+		cat "$dir_actual/inicializador.log" >> "$dir_log"
+		rm "$dir_actual/inicializador.log"
+	elif [ ! -d "$DIRPROC" ]
+	then
+		dir_log="$dir_actual/inicializador.log"
+	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-ERR-"$1"-"$2
 
-	echo $linea >> $dir_log
+	echo -e $linea"\n" >> "$dir_log"
 	return 0
 }
 #Esta funcion loguea mensajes de tipo INFO, recibe dos parametros que son el mensaje y a la que pertenece el mensaje
 function loguearINFO()
 {
+	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/inicializador.log" ]
+	then
+		dir_log="$DIRPROC/inicializador.log"
+		cat "$dir_actual/inicializador.log" >> "$dir_log"
+		rm "$dir_actual/inicializador.log"
+	elif [ ! -d "$DIRPROC" ]
+	then
+		dir_log="$dir_actual/inicializador.log"
+	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
-	echo $linea >> $dir_log
+	echo -e $linea"\n" >> "$dir_log"
 	return 0
 }
 #Esta funcion loguea mensajes de tipo ALERTA, recibe dos parametros que son el mensaje y a la que pertenece el mensaje
 function loguearALE()
 {
+	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/inicializador.log" ]
+	then
+		dir_log="$DIRPROC/inicializador.log"
+		cat "$dir_actual/inicializador.log" >> "$dir_log"
+		rm "$dir_actual/inicializador.log"
+	elif [ ! -d "$DIRPROC" ]
+	then
+		dir_log="$dir_actual/inicializador.log"
+	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
 
-	echo $linea >> $dir_log
+	echo -e $linea"\n" >> "$dir_log"
 	return 0
 }
 
@@ -330,12 +363,12 @@ function loguearALE()
 
 #PRIMERO SE VE CUANTOS PARAMETROS RECIBIO EL SCRIPT, NO DEBERIA RECIBIR NINGUNO
 
-dir_log="inicializador.log"
-if [ -d "$DIRPROC" ]
-then
-	dir_log="$DIRPROC/inicializador.log"
-fi
+dir_actual=$PWD
+cd ..
 
+GRUPO=$PWD
+
+cd "$dir_actual"
 
 loguearINFO "COMIENZA INICIALIZADOR" "inicializador"
 
@@ -353,38 +386,34 @@ else
 	instalado
 
 	op=$?
-
-	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/inicializador.log" ]
-	then
-		dir_log="$DIRPROC/inicializador.log"
-		cat "inicializador.log" >> "$DIRPROC/inicializador.log"
-		rm "inicializador.log"
-	fi
 	
 	#SI EL INICIALIZADOR VE QUE ESTADO DE DIRECTORIOS DEL DIRECTORIO GRUPO ES EL ESTADO INICIAL, O NO ENCUENTRA EL ARCHIVO DE CONFIGURACION
 	# EL SISTEMA SE CONSIDERA NO INSTALADO, SI EL PRIMER CASO ES VERDADERO SE DEBERA INSTALAT EL SISTEMA,
 	# SI EL SEGUNDO LO ES VER EN EL INSTALADOR COMO SE PUEDE RECUPERAR O CREAR EL ARCHIVO DE CONFIGURACION
-	if [ $op -eq -1 ]
+	if [ $op -eq 3 ]
 	then
 		loguearALE "El sistema no esta instalado" "inicializador"
-		echo -e "\tEl sistema no esta instalado."
+		echo -e "\nEl sistema no esta instalado."
 		export HAYAMBIENTE=""
 	#LA INSTALACION SE EFECTUO; PERO EL SISTEMA SE TIENE QUE REPARAR, SE LE DICE AL USUARIO COMO REPARAR EL SISTEMA Y SE CIERRA EL INICIALIZADOR
 	elif [ $op -eq 0 ]
-		then
-			loguearALE "El sistema esta instalado, pero la instalacion esta rota. Se cierra el inicializador y se indica al usuario que hacer para reparar el sistema" "inicializador"
-			echo -e "\nInstalacion incompleta, el sistema tiene que ser reparado. Por favor ir a la carpeta inst y ejecutar por linea de comando:"
-			echo -e "\n\t./instalador.sh -r"
-			export HAYAMBIENTE=""
+	then
+
+		loguearALE "El sistema esta instalado, pero la instalacion esta rota. Se cierra el inicializador y se indica al usuario que hacer para reparar el sistema" "inicializador"
+		echo -e "\nInstalacion incompleta, el sistema tiene que ser reparado. Por favor ir a la carpeta inst y ejecutar por linea de comando:"
+		echo -e "\n\t./instalador.sh -r"
+		export HAYAMBIENTE=""
 	#EL INSTALADOR NO SE ENCUENTRA, ESTE ESCENARIO TIENE QUE SER REPARADO MANUALMENTE POR EL USUARIO YENDO A BUSCAR EL INSTALADOR DEL BACKUP
 	elif [ $op -eq 2 ]
-		then
-			loguearALE "Instalacion incompleta. No pudo encontrarse el script instalador en el directorio inst. Por favor recuperarlo en ese directorio, de lo contrario el sistema no podra ser reparado" "inicializador"
-			echo -e "\nInstalacion incompleta. No pudo encontrarse el script instalador en el directorio inst. Por favor recuperarlo en ese directorio, de lo contrario el sistema no podra ser reparado."
-			export HAYAMBIENTE=""
+	then
+
+		loguearALE "Instalacion incompleta. No pudo encontrarse el script instalador en el directorio inst. Por favor recuperarlo en ese directorio, de lo contrario el sistema no podra ser reparado" "inicializador"
+		echo -e "\nInstalacion incompleta. No pudo encontrarse el script instalador en el directorio inst. Por favor recuperarlo en ese directorio, de lo contrario el sistema no podra ser reparado."
+		export HAYAMBIENTE=""
 	#EL SISTEMA ESTA INSTALADO CORRECTAMENTE
 	elif [ $op -eq 1 ]
 		then
+
 			loguearINFO "El sistema esta instalado" "inicializador"
 			loguearINFO "Verificando inicializacion" "inicializador"
 			echo -e "\nEl sistema esta instalado."
@@ -449,4 +478,4 @@ else
 
 fi
 loguearINFO "FIN INICIALIZADOR" "inicializador"
-echo -e "\n" >> $dir_log
+echo -e "\n" >> "$dir_log"
