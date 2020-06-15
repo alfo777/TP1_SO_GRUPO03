@@ -1,0 +1,735 @@
+[ 2020-06-15 18:53:34 ]-INF-Empieza Instalador-instalador
+
+[ 2020-06-15 18:53:34 ]-ERR-Parametros ingresados invalidos, el instalador se cerrara-instalador
+
+[ 2020-06-15 18:53:34 ]-INF-FIN DEL SCRIPT-instalador
+
+
+
+
+[ 2020-06-15 18:53:37 ]-INF-Empieza Instalador-instalador
+
+[ 2020-06-15 18:53:37 ]-INF-Se recibio como parametro '-r'-instalador
+
+[ 2020-06-15 18:53:37 ]-INF-Verificamos si el sistema ya se instalo-instalador
+
+[ 2020-06-15 18:53:37 ]-INF-El sistema aun no ha sido instalado. El proceso instalador se cerrara.-instalador
+
+[ 2020-06-15 18:53:37 ]-INF-FIN DEL SCRIPT-instalador
+
+
+
+
+[ 2020-06-15 18:53:39 ]-INF-Empieza Instalador-instalador
+
+[ 2020-06-15 18:53:39 ]-INF-El instalador no recibio ningun parametro-instalador
+
+[ 2020-06-15 18:53:39 ]-INF-Se verifica si el sistema ya se instalo-instalador
+
+[ 2020-06-15 18:53:39 ]-INF-El sistema puede empezar a instalarse-instalador
+
+[ 2020-06-15 18:53:39 ]-INF-COMIENZA INSTALACION-Instalar
+
+[ 2020-06-15 18:53:39 ]-INF-Se procedera con la instalacion del ambiente para poder correr nuestro proceso-Instalar
+
+[ 2020-06-15 18:53:39 ]-INF-Primero se necesita configurar el nombre de los directorios con los que se va a trabajar-instalar
+
+[ 2020-06-15 18:53:39 ]-INF-Primer Directorio:-Instalar
+
+[ 2020-06-15 18:53:39 ]-INF-Nombre por defecto: bin-Instalar
+
+[ 2020-06-15 18:53:39 ]-INF-Funcion: guardar archivos ejecutables-Instalar
+
+[ 2020-06-15 18:53:39 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15 18:53:39 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:53:43 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15 18:53:45 ]-INF-Ingrese el nombre nuevo del directorio: -validar_nombre
+
+[ 2020-06-15 18:53:45 ]-INF-El usuario ingreso: mi bin-validar_nombre
+
+[ 2020-06-15 18:53:45 ]-INF-Segundo Directorio:-Instalar
+
+[ 2020-06-15 18:53:45 ]-INF-Nombre por defecto: tab-Instalar
+
+[ 2020-06-15 18:53:45 ]-INF-Funcion: guardar las tablas de nuetro sistema-Instalar
+
+[ 2020-06-15 18:53:45 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15 18:53:45 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:53:47 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15 18:53:50 ]-INF-Ingrese el nombre nuevo del directorio: -validar_nombre
+
+[ 2020-06-15 18:53:50 ]-INF-El usuario ingreso: mi tab-validar_nombre
+
+[ 2020-06-15 18:53:50 ]-INF-Tercer Directorio:-Instalar
+
+[ 2020-06-15 18:53:50 ]-INF-Nombre por defecto: nov-Instalar
+
+[ 2020-06-15 18:53:50 ]-INF-Funcion: guardar archivos de novedades-Instalar
+
+[ 2020-06-15 18:53:50 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15 18:53:50 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:53:52 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15 18:53:54 ]-INF-Ingrese el nombre nuevo del directorio: -validar_nombre
+
+[ 2020-06-15 18:53:54 ]-INF-El usuario ingreso: mi nov-validar_nombre
+
+[ 2020-06-15 18:53:54 ]-INF-Cuarto Directorio:-Instalar
+
+[ 2020-06-15 18:53:54 ]-INF-Nombre por defecto: ok-Instalar
+
+[ 2020-06-15 18:53:54 ]-INF-Funcion: guardar archivos de novedades que fueron aceptados-Instalar
+
+[ 2020-06-15 18:53:54 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15 18:53:54 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:53:56 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15 18:53:57 ]-INF-Ingrese el nombre nuevo del directorio: -validar_nombre
+
+[ 2020-06-15 18:53:57 ]-INF-El usuario ingreso: mi ok-validar_nombre
+
+[ 2020-06-15 18:53:57 ]-INF-Quinto Directorio:-Instalar
+
+[ 2020-06-15 18:53:57 ]-INF-Nombre por defecto: nok-Instalar
+
+[ 2020-06-15 18:53:57 ]-INF-Funcion: guardar archivos de novedades que fueron rechazados-Instalar
+
+[ 2020-06-15 18:53:57 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15 18:53:57 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:53:58 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15 18:54:00 ]-INF-Ingrese el nombre nuevo del directorio: -validar_nombre
+
+[ 2020-06-15 18:54:00 ]-INF-El usuario ingreso: mi nok-validar_nombre
+
+[ 2020-06-15 18:54:00 ]-INF-Sexto Directorio:-Instalar
+
+[ 2020-06-15 18:54:00 ]-INF-Nombre por defecto: proc-Instalar
+
+[ 2020-06-15 18:54:00 ]-INF-Funcion: guardar archivos que han sido procesados-Instalar
+
+[ 2020-06-15 18:54:00 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15 18:54:00 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:54:02 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15 18:54:08 ]-INF-Ingrese el nombre nuevo del directorio: -validar_nombre
+
+[ 2020-06-15 18:54:08 ]-INF-El usuario ingreso: mi nok-validar_nombre
+
+[ 2020-06-15 18:54:12 ]-INF-El nombre ingresado ya existe, no pueden haber directorios con nombre duplicado. Por favor ingrese otro nombre: -validar_nombre
+
+[ 2020-06-15 18:54:12 ]-INF-El usuario ingreso: mi proc-validar_nombre
+
+[ 2020-06-15 18:54:12 ]-INF-Septimo Directorio:-Instalar
+
+[ 2020-06-15 18:54:12 ]-INF-Nombre por defecto: sal-Instalar
+
+[ 2020-06-15 18:54:12 ]-INF-Funcion: guardar archivos que genera el sistema durante el procesamiento-Instalar
+
+[ 2020-06-15 18:54:12 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15 18:54:12 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:54:14 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15 18:54:16 ]-INF-Ingrese el nombre nuevo del directorio: -validar_nombre
+
+[ 2020-06-15 18:54:16 ]-INF-El usuario ingreso: mi sal-validar_nombre
+
+[ 2020-06-15 18:54:16 ]-INF-La hora de cierre es 180000, ¿desea cambiarla? SI-NO: -Instalar
+
+[ 2020-06-15 18:54:16 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:54:18 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15 18:54:18 ]-INF-Ingrese la nueva hora de cierre, formato HHMMSS: -validar_hora
+
+[ 2020-06-15 18:54:25 ]-INF-El usuario ingreso: -validar_hora
+
+[ 2020-06-15 18:54:25 ]-INF-Se muestran en pantalla es estado final del sistema:-
+
+
+	TP SO7508 1º Cuatrimestre 2020. Copyright © Grupo 03
+	Directorio padre:                   /home/alfonso/Escritorio/GRUPO/GRUPO03
+	Directorio de instalador            /home/alfonso/Escritorio/GRUPO/GRUPO03/inst
+	Script instalador:                  /home/alfonso/Escritorio/GRUPO/GRUPO03/inst/instalador.sh
+	Log de la instalación:              /home/alfonso/Escritorio/GRUPO/GRUPO03/inst/instalador.log
+	Configuración de la instalación:    /home/alfonso/Escritorio/GRUPO/GRUPO03/inst/instalador.conf
+	Directorio de ejecutables:          /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin
+	Script proceso:                     /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin/proceso.sh
+	Script inicializador:               /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin/inicializador.sh
+	Script stop:                        /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin/stop.sh
+	Script start:                       /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin/start.sh
+	Directorio de tablas:               /home/alfonso/Escritorio/GRUPO/GRUPO03/mi tab
+	Tabla de Comercios:                 /home/alfonso/Escritorio/GRUPO/GRUPO03/mi tab/Tabla_comercio.csv
+	Tabla de provincias:                /home/alfonso/Escritorio/GRUPO/GRUPO03/mi tab/Tabla_provincias.csv
+	Tabla de respuestas gateway:        /home/alfonso/Escritorio/GRUPO/GRUPO03/mi tab/Tabla_respuesta_gateway.csv
+	Directorio de novedades:            /home/alfonso/Escritorio/GRUPO/GRUPO03/mi nov
+	Directorio de aceptados:            /home/alfonso/Escritorio/GRUPO/GRUPO03/mi ok
+	Directorio de rechazados:           /home/alfonso/Escritorio/GRUPO/GRUPO03/mi nok
+	Directorio de procesados:           /home/alfonso/Escritorio/GRUPO/GRUPO03/mi proc
+	Directorio de salidas:              /home/alfonso/Escritorio/GRUPO/GRUPO03/mi sal
+	Directorio de copias de seguridad:  /home/alfonso/Escritorio/GRUPO/GRUPO03/BACKUPs
+	Hora de Cierre:                     160000
+[ 2020-06-15 18:54:25 ]-INF-Estado de la instalación: LISTA-instalar
+
+[ 2020-06-15 18:54:25 ]-INF-¿Confirma la instalación? (SI-NO): -instalar
+
+[ 2020-06-15 18:54:25 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:54:27 ]-INF-La respuesta del usuario fue: NO-ingresarSiNo
+
+[ 2020-06-15 18:54:27 ]-INF-El usuario ingreso NO, el usuario volvera a la configuracion del sistema hasta que este satisfecho con el resultado-instalar
+
+[ 2020-06-15 18:54:27 ]-INF-COMIENZA INSTALACION-Instalar
+
+[ 2020-06-15 18:54:27 ]-INF-Se procedera con la instalacion del ambiente para poder correr nuestro proceso-Instalar
+
+[ 2020-06-15 18:54:27 ]-INF-Primero se necesita configurar el nombre de los directorios con los que se va a trabajar-instalar
+
+[ 2020-06-15 18:54:27 ]-INF-Primer Directorio:-Instalar
+
+[ 2020-06-15 18:54:27 ]-INF-Nombre por defecto: mi bin-Instalar
+
+[ 2020-06-15 18:54:27 ]-INF-Funcion: guardar archivos ejecutables-Instalar
+
+[ 2020-06-15 18:54:27 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15 18:54:27 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:54:30 ]-INF-La respuesta del usuario fue: NO-ingresarSiNo
+
+[ 2020-06-15 18:54:30 ]-INF-Segundo Directorio:-Instalar
+
+[ 2020-06-15 18:54:30 ]-INF-Nombre por defecto: mi tab-Instalar
+
+[ 2020-06-15 18:54:30 ]-INF-Funcion: guardar las tablas de nuetro sistema-Instalar
+
+[ 2020-06-15 18:54:30 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15 18:54:30 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:54:31 ]-INF-La respuesta del usuario fue: NO-ingresarSiNo
+
+[ 2020-06-15 18:54:31 ]-INF-Tercer Directorio:-Instalar
+
+[ 2020-06-15 18:54:31 ]-INF-Nombre por defecto: mi nov-Instalar
+
+[ 2020-06-15 18:54:31 ]-INF-Funcion: guardar archivos de novedades-Instalar
+
+[ 2020-06-15 18:54:31 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15 18:54:31 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:54:31 ]-INF-La respuesta del usuario fue: NO-ingresarSiNo
+
+[ 2020-06-15 18:54:31 ]-INF-Cuarto Directorio:-Instalar
+
+[ 2020-06-15 18:54:31 ]-INF-Nombre por defecto: mi ok-Instalar
+
+[ 2020-06-15 18:54:31 ]-INF-Funcion: guardar archivos de novedades que fueron aceptados-Instalar
+
+[ 2020-06-15 18:54:31 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15 18:54:31 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:54:32 ]-INF-La respuesta del usuario fue: NO-ingresarSiNo
+
+[ 2020-06-15 18:54:32 ]-INF-Quinto Directorio:-Instalar
+
+[ 2020-06-15 18:54:32 ]-INF-Nombre por defecto: mi nok-Instalar
+
+[ 2020-06-15 18:54:32 ]-INF-Funcion: guardar archivos de novedades que fueron rechazados-Instalar
+
+[ 2020-06-15 18:54:32 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15 18:54:32 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:54:32 ]-INF-La respuesta del usuario fue: NO-ingresarSiNo
+
+[ 2020-06-15 18:54:32 ]-INF-Sexto Directorio:-Instalar
+
+[ 2020-06-15 18:54:32 ]-INF-Nombre por defecto: mi proc-Instalar
+
+[ 2020-06-15 18:54:32 ]-INF-Funcion: guardar archivos que han sido procesados-Instalar
+
+[ 2020-06-15 18:54:32 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15 18:54:32 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:54:33 ]-INF-La respuesta del usuario fue: NO-ingresarSiNo
+
+[ 2020-06-15 18:54:33 ]-INF-Septimo Directorio:-Instalar
+
+[ 2020-06-15 18:54:33 ]-INF-Nombre por defecto: mi sal-Instalar
+
+[ 2020-06-15 18:54:33 ]-INF-Funcion: guardar archivos que genera el sistema durante el procesamiento-Instalar
+
+[ 2020-06-15 18:54:33 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15 18:54:33 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:54:33 ]-INF-La respuesta del usuario fue: NO-ingresarSiNo
+
+[ 2020-06-15 18:54:33 ]-INF-La hora de cierre es 160000, ¿desea cambiarla? SI-NO: -Instalar
+
+[ 2020-06-15 18:54:33 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:54:35 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15 18:54:35 ]-INF-Ingrese la nueva hora de cierre, formato HHMMSS: -validar_hora
+
+[ 2020-06-15 18:54:38 ]-INF-El usuario ingreso: 160000-validar_hora
+
+[ 2020-06-15 18:54:38 ]-INF-Se muestran en pantalla es estado final del sistema:-
+
+
+	TP SO7508 1º Cuatrimestre 2020. Copyright © Grupo 03
+	Directorio padre:                   /home/alfonso/Escritorio/GRUPO/GRUPO03
+	Directorio de instalador            /home/alfonso/Escritorio/GRUPO/GRUPO03/inst
+	Script instalador:                  /home/alfonso/Escritorio/GRUPO/GRUPO03/inst/instalador.sh
+	Log de la instalación:              /home/alfonso/Escritorio/GRUPO/GRUPO03/inst/instalador.log
+	Configuración de la instalación:    /home/alfonso/Escritorio/GRUPO/GRUPO03/inst/instalador.conf
+	Directorio de ejecutables:          /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin
+	Script proceso:                     /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin/proceso.sh
+	Script inicializador:               /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin/inicializador.sh
+	Script stop:                        /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin/stop.sh
+	Script start:                       /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin/start.sh
+	Directorio de tablas:               /home/alfonso/Escritorio/GRUPO/GRUPO03/mi tab
+	Tabla de Comercios:                 /home/alfonso/Escritorio/GRUPO/GRUPO03/mi tab/Tabla_comercio.csv
+	Tabla de provincias:                /home/alfonso/Escritorio/GRUPO/GRUPO03/mi tab/Tabla_provincias.csv
+	Tabla de respuestas gateway:        /home/alfonso/Escritorio/GRUPO/GRUPO03/mi tab/Tabla_respuesta_gateway.csv
+	Directorio de novedades:            /home/alfonso/Escritorio/GRUPO/GRUPO03/mi nov
+	Directorio de aceptados:            /home/alfonso/Escritorio/GRUPO/GRUPO03/mi ok
+	Directorio de rechazados:           /home/alfonso/Escritorio/GRUPO/GRUPO03/mi nok
+	Directorio de procesados:           /home/alfonso/Escritorio/GRUPO/GRUPO03/mi proc
+	Directorio de salidas:              /home/alfonso/Escritorio/GRUPO/GRUPO03/mi sal
+	Directorio de copias de seguridad:  /home/alfonso/Escritorio/GRUPO/GRUPO03/BACKUPs
+	Hora de Cierre:                     170000
+[ 2020-06-15 18:54:38 ]-INF-Estado de la instalación: LISTA-instalar
+
+[ 2020-06-15 18:54:38 ]-INF-¿Confirma la instalación? (SI-NO): -instalar
+
+[ 2020-06-15 18:54:38 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15 18:54:41 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15 18:54:41 ]-INF-El usuario ingreso SI, se instalara el sistema-instalar
+
+[ 2020-06-15 18:54:41 ]-INF-Se crean los directorios del sistema-crear_directorio
+
+[ 2020-06-15 18:54:41 ]-INF-Se crea el archivo de configuracion-crear_directorio
+
+[ 2020-06-15 18:54:41 ]-INF-Las tablas, los archivos y los scrpts se transportan a sus directorios correspondientes-crear_directorio
+
+[ 2020-06-15 18:54:41 ]-INF-INSTALACION TERMINADA-instalar
+
+[ 2020-06-15 18:54:41 ]-INF-FIN DEL SCRIPT-instalador
+
+
+
+
+[ 2020-06-15 18:55:15 ]-INF-Empieza Instalador-instalador
+
+[ 2020-06-15 18:55:15 ]-INF-El instalador no recibio ningun parametro-instalador
+
+[ 2020-06-15 18:55:15 ]-INF-Se verifica si el sistema ya se instalo-instalador
+
+[ 2020-06-15 18:55:15 ]-INF-Se comprueba si el sistema necesita reparacion-necesita_reparar
+
+[ 2020-06-15 18:55:15 ]-INF-El sistema ya fue instalado pero se lo necesita reparar, se le indica al usuario como hacerlo-instalador
+
+[ 2020-06-15 18:55:15 ]-INF-FIN DEL SCRIPT-instalador
+
+
+
+
+[ 2020-06-15 18:55:21 ]-INF-Empieza Instalador-instalador
+
+[ 2020-06-15 18:55:21 ]-INF-Se recibio como parametro '-r'-instalador
+
+[ 2020-06-15 18:55:21 ]-INF-Verificamos si el sistema ya se instalo-instalador
+
+[ 2020-06-15 18:55:21 ]-INF-Restauramos el sistema-instalador
+
+[ 2020-06-15 18:55:21 ]-INF-Se comprueba si el instalador.conf existe-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-Se comprueba las tablas, los directorios y los scripts existen-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-El directorio que guarda los ejecutables y los scripts no existe ( bin por defecto), se creara uno nuevo-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-El directorio que guarda las tablas no existe ( tab por defecto), se creara uno nuevo-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-El directorio que guarda los archivos de novedades no existe ( nov por defecto), se creara uno nuevo-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-El directorio que guarda los archivos de novedades aceptados no existe ( ok por defecto), se creara uno nuevo-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-El directorio que guarda los archivos de novedades rechazados no existe( nok por defecto), se creara uno nuevo-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-El directorio que guarda los archivos que han sido procesados no existe( proc por defecto), se creara uno nuevo-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-El directorio que guarda los archivos que son generados por el sistema mientras se ejecuta el proceso( sal por defecto), se creara uno nuevo-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-El proceso no se encuentra en la carpeta bin, se lo va a tratar de recuperar-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-El proceso fue recuperado exitosamente-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-El inicializador no se encuentra en la carpeta bin, se lo va a tratar de recuperar-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-El inicializador fue recuperado exitosamente-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-El script stop no se encuentra en la carpeta del ejecutables, se lo va a tratar de recuperar-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-El script stop fue recuperado exitosamente-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-El script start no se encuentra en la carpeta del ejecutables, se lo va a tratar de recuperar-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-El script start fue recuperado exitosamente-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-La tabla de comercios no se encuentra en la carpeta tab, se la va a tratar de recuperar-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-La tabla de comercios fue recuperada exitosamente-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-La tabla de provincias no se encuentra en la carpeta tab, se la va a tratar de recuperar-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-La tabla de provincias fue recuperada exitosamente-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-La tabla de respuesta de gateway no se encuentra en la carpeta tab, se la va a tratar de recuperar-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-La tabla de respuesta de gateway fue recuperada exitosamente-restaurar
+
+[ 2020-06-15 18:55:21 ]-INF-El sistema fue restaurado con exito.-instalador
+
+[ 2020-06-15 18:55:21 ]-INF-FIN DEL SCRIPT-instalador
+
+
+
+
+[ 2020-06-15 18:55:31 ]-INF-Empieza Instalador-instalador
+
+[ 2020-06-15 18:55:31 ]-INF-El instalador no recibio ningun parametro-instalador
+
+[ 2020-06-15 18:55:31 ]-INF-Se verifica si el sistema ya se instalo-instalador
+
+[ 2020-06-15 18:55:31 ]-INF-Se comprueba si el sistema necesita reparacion-necesita_reparar
+
+[ 2020-06-15 18:55:31 ]-INF-El sistema ya fue instalado exitosamente. El directorio resultado tiene esta forma: -instalador
+
+[ 2020-06-15 18:55:31 ]-INF-Se muestran en pantalla es estado final del sistema:-
+
+
+	TP SO7508 1º Cuatrimestre 2020. Copyright © Grupo 03
+	Directorio padre:                   /home/alfonso/Escritorio/GRUPO/GRUPO03
+	Directorio de instalador            /home/alfonso/Escritorio/GRUPO/GRUPO03/inst
+	Script instalador:                  /home/alfonso/Escritorio/GRUPO/GRUPO03/inst/instalador.sh
+	Log de la instalación:              /home/alfonso/Escritorio/GRUPO/GRUPO03/inst/instalador.log
+	Configuración de la instalación:    /home/alfonso/Escritorio/GRUPO/GRUPO03/inst/instalador.conf
+	Directorio de ejecutables:          /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin
+	Script proceso:                     /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin/proceso.sh
+	Script inicializador:               /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin/inicializador.sh
+	Script stop:                        /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin/stop.sh
+	Script start:                       /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin/start.sh
+	Directorio de tablas:               /home/alfonso/Escritorio/GRUPO/GRUPO03/mi tab
+	Tabla de Comercios:                 /home/alfonso/Escritorio/GRUPO/GRUPO03/mi tab/Tabla_comercio.csv
+	Tabla de provincias:                /home/alfonso/Escritorio/GRUPO/GRUPO03/mi tab/Tabla_provincias.csv
+	Tabla de respuestas gateway:        /home/alfonso/Escritorio/GRUPO/GRUPO03/mi tab/Tabla_respuesta_gateway.csv
+	Directorio de novedades:            /home/alfonso/Escritorio/GRUPO/GRUPO03/mi nov
+	Directorio de aceptados:            /home/alfonso/Escritorio/GRUPO/GRUPO03/mi ok
+	Directorio de rechazados:           /home/alfonso/Escritorio/GRUPO/GRUPO03/mi nok
+	Directorio de procesados:           /home/alfonso/Escritorio/GRUPO/GRUPO03/mi proc
+	Directorio de salidas:              /home/alfonso/Escritorio/GRUPO/GRUPO03/mi sal
+	Directorio de copias de seguridad:  /home/alfonso/Escritorio/GRUPO/GRUPO03/BACKUPs
+	Hora de Cierre:                     170000
+[ 2020-06-15 18:55:31 ]-INF-FIN DEL SCRIPT-instalador
+
+
+
+
+[ 2020-06-15 18:55:53 ]-INF-Empieza Instalador-instalador
+
+[ 2020-06-15 18:55:53 ]-INF-Se recibio como parametro '-r'-instalador
+
+[ 2020-06-15 18:55:53 ]-INF-Verificamos si el sistema ya se instalo-instalador
+
+[ 2020-06-15 18:55:53 ]-INF-Restauramos el sistema-instalador
+
+[ 2020-06-15 18:55:53 ]-INF-Se comprueba si el instalador.conf existe-restaurar
+
+[ 2020-06-15 18:55:53 ]-INF-Se comprueba las tablas, los directorios y los scripts existen-restaurar
+
+[ 2020-06-15 18:55:53 ]-INF-El archivo de configuracion no se encuantra en el directorio inst,se lo va a tratar de recuperar-restaurar
+
+[ 2020-06-15 18:55:53 ]-INF-El archivo de configuracion fue recuperado exitosamente-restaurar
+
+[ 2020-06-15 18:55:53 ]-INF-El sistema fue restaurado con exito.-instalador
+
+[ 2020-06-15 18:55:53 ]-INF-FIN DEL SCRIPT-instalador
+
+
+
+
+[ 2020-06-15 18:56:19 ]-INF-Empieza Instalador-instalador
+
+[ 2020-06-15 18:56:19 ]-INF-El instalador no recibio ningun parametro-instalador
+
+[ 2020-06-15 18:56:19 ]-INF-Se verifica si el sistema ya se instalo-instalador
+
+[ 2020-06-15 18:56:19 ]-INF-Se comprueba si el sistema necesita reparacion-necesita_reparar
+
+[ 2020-06-15 18:56:19 ]-INF-El sistema ya fue instalado pero se lo necesita reparar, se le indica al usuario como hacerlo-instalador
+
+[ 2020-06-15 18:56:19 ]-INF-FIN DEL SCRIPT-instalador
+
+
+
+
+[ 2020-06-15 18:56:22 ]-INF-Empieza Instalador-instalador
+
+[ 2020-06-15 18:56:22 ]-INF-Se recibio como parametro '-r'-instalador
+
+[ 2020-06-15 18:56:22 ]-INF-Verificamos si el sistema ya se instalo-instalador
+
+[ 2020-06-15 18:56:22 ]-INF-Restauramos el sistema-instalador
+
+[ 2020-06-15 18:56:22 ]-INF-Se comprueba si el instalador.conf existe-restaurar
+
+[ 2020-06-15 18:56:22 ]-INF-El archivo de configuracion no se encuentra. Se procedera a reistalar el sistema-restaurar
+
+[ 2020-06-15 18:56:22 ]-INF-El sistema se tiene que reistalar. Ingrese cualquier tecla para proceder con la instalacion-instalador
+
+[ 2020-06-15 18:56:22 ]-INF-El sistema se prepara para la reistacion-preparar_reinstalacion
+
+[ 2020-06-15 18:56:22 ]-INF-Se remueven todos los directorios y se recupera el BACKUP-preparar_reinstalacion
+
+[ 2020-06-15  18:56:24 ]-INF-El sistema se reinstalara-Instalador
+
+[ 2020-06-15  18:56:24 ]-INF-COMIENZA INSTALACION-Instalar
+
+[ 2020-06-15  18:56:24 ]-INF-Se procedera con la instalacion del ambiente para poder correr nuestro proceso-Instalar
+
+[ 2020-06-15  18:56:24 ]-INF-Primero se necesita configurar el nombre de los directorios con los que se va a trabajar-instalar
+
+[ 2020-06-15  18:56:24 ]-INF-Primer Directorio:-Instalar
+
+[ 2020-06-15  18:56:24 ]-INF-Nombre por defecto: bin-Instalar
+
+[ 2020-06-15  18:56:24 ]-INF-Funcion: guardar archivos ejecutables-Instalar
+
+[ 2020-06-15  18:56:24 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15  18:56:24 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15  18:56:32 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15  18:56:33 ]-INF-Ingrese el nombre nuevo del directorio: -validar_nombre
+
+[ 2020-06-15  18:56:33 ]-INF-El usuario ingreso: mi bin-validar_nombre
+
+[ 2020-06-15  18:56:33 ]-INF-Segundo Directorio:-Instalar
+
+[ 2020-06-15  18:56:33 ]-INF-Nombre por defecto: tab-Instalar
+
+[ 2020-06-15  18:56:33 ]-INF-Funcion: guardar las tablas de nuetro sistema-Instalar
+
+[ 2020-06-15  18:56:33 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15  18:56:33 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15  18:56:35 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15  18:56:37 ]-INF-Ingrese el nombre nuevo del directorio: -validar_nombre
+
+[ 2020-06-15  18:56:37 ]-INF-El usuario ingreso: mi tab-validar_nombre
+
+[ 2020-06-15  18:56:37 ]-INF-Tercer Directorio:-Instalar
+
+[ 2020-06-15  18:56:37 ]-INF-Nombre por defecto: nov-Instalar
+
+[ 2020-06-15  18:56:37 ]-INF-Funcion: guardar archivos de novedades-Instalar
+
+[ 2020-06-15  18:56:37 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15  18:56:37 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15  18:56:38 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15  18:56:40 ]-INF-Ingrese el nombre nuevo del directorio: -validar_nombre
+
+[ 2020-06-15  18:56:40 ]-INF-El usuario ingreso: mi nov-validar_nombre
+
+[ 2020-06-15  18:56:40 ]-INF-Cuarto Directorio:-Instalar
+
+[ 2020-06-15  18:56:40 ]-INF-Nombre por defecto: ok-Instalar
+
+[ 2020-06-15  18:56:40 ]-INF-Funcion: guardar archivos de novedades que fueron aceptados-Instalar
+
+[ 2020-06-15  18:56:40 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15  18:56:40 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15  18:56:41 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15  18:56:42 ]-INF-Ingrese el nombre nuevo del directorio: -validar_nombre
+
+[ 2020-06-15  18:56:42 ]-INF-El usuario ingreso: mi ok-validar_nombre
+
+[ 2020-06-15  18:56:42 ]-INF-Quinto Directorio:-Instalar
+
+[ 2020-06-15  18:56:42 ]-INF-Nombre por defecto: nok-Instalar
+
+[ 2020-06-15  18:56:42 ]-INF-Funcion: guardar archivos de novedades que fueron rechazados-Instalar
+
+[ 2020-06-15  18:56:42 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15  18:56:42 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15  18:56:44 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15  18:56:46 ]-INF-Ingrese el nombre nuevo del directorio: -validar_nombre
+
+[ 2020-06-15  18:56:46 ]-INF-El usuario ingreso: mi nok-validar_nombre
+
+[ 2020-06-15  18:56:46 ]-INF-Sexto Directorio:-Instalar
+
+[ 2020-06-15  18:56:46 ]-INF-Nombre por defecto: proc-Instalar
+
+[ 2020-06-15  18:56:46 ]-INF-Funcion: guardar archivos que han sido procesados-Instalar
+
+[ 2020-06-15  18:56:46 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15  18:56:46 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15  18:56:48 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15  18:56:50 ]-INF-Ingrese el nombre nuevo del directorio: -validar_nombre
+
+[ 2020-06-15  18:56:50 ]-INF-El usuario ingreso: mi proc-validar_nombre
+
+[ 2020-06-15  18:56:50 ]-INF-Septimo Directorio:-Instalar
+
+[ 2020-06-15  18:56:50 ]-INF-Nombre por defecto: sal-Instalar
+
+[ 2020-06-15  18:56:50 ]-INF-Funcion: guardar archivos que genera el sistema durante el procesamiento-Instalar
+
+[ 2020-06-15  18:56:50 ]-INF-¿Desea cambiar el nombre de este directorio? SI-NO: -validar_nombre
+
+[ 2020-06-15  18:56:50 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15  18:56:52 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15  18:56:53 ]-INF-Ingrese el nombre nuevo del directorio: -validar_nombre
+
+[ 2020-06-15  18:56:53 ]-INF-El usuario ingreso: mi sal-validar_nombre
+
+[ 2020-06-15  18:56:54 ]-INF-La hora de cierre es 180000, ¿desea cambiarla? SI-NO: -Instalar
+
+[ 2020-06-15  18:56:54 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15  18:56:56 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15  18:56:56 ]-INF-Ingrese la nueva hora de cierre, formato HHMMSS: -validar_hora
+
+[ 2020-06-15  18:57:00 ]-INF-El usuario ingreso: -validar_hora
+
+[ 2020-06-15  18:57:00 ]-INF-Se muestran en pantalla es estado final del sistema:-
+
+
+	TP SO7508 1º Cuatrimestre 2020. Copyright © Grupo 03
+	Directorio padre:                   /home/alfonso/Escritorio/GRUPO/GRUPO03
+	Directorio de instalador            /home/alfonso/Escritorio/GRUPO/GRUPO03/inst
+	Script instalador:                  /home/alfonso/Escritorio/GRUPO/GRUPO03/inst/instalador.sh
+	Log de la instalación:              /home/alfonso/Escritorio/GRUPO/GRUPO03/inst/instalador.log
+	Configuración de la instalación:    /home/alfonso/Escritorio/GRUPO/GRUPO03/inst/instalador.conf
+	Directorio de ejecutables:          /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin
+	Script proceso:                     /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin/proceso.sh
+	Script inicializador:               /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin/inicializador.sh
+	Script stop:                        /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin/stop.sh
+	Script start:                       /home/alfonso/Escritorio/GRUPO/GRUPO03/mi bin/start.sh
+	Directorio de tablas:               /home/alfonso/Escritorio/GRUPO/GRUPO03/mi tab
+	Tabla de Comercios:                 /home/alfonso/Escritorio/GRUPO/GRUPO03/mi tab/Tabla_comercio.csv
+	Tabla de provincias:                /home/alfonso/Escritorio/GRUPO/GRUPO03/mi tab/Tabla_provincias.csv
+	Tabla de respuestas gateway:        /home/alfonso/Escritorio/GRUPO/GRUPO03/mi tab/Tabla_respuesta_gateway.csv
+	Directorio de novedades:            /home/alfonso/Escritorio/GRUPO/GRUPO03/mi nov
+	Directorio de aceptados:            /home/alfonso/Escritorio/GRUPO/GRUPO03/mi ok
+	Directorio de rechazados:           /home/alfonso/Escritorio/GRUPO/GRUPO03/mi nok
+	Directorio de procesados:           /home/alfonso/Escritorio/GRUPO/GRUPO03/mi proc
+	Directorio de salidas:              /home/alfonso/Escritorio/GRUPO/GRUPO03/mi sal
+	Directorio de copias de seguridad:  /home/alfonso/Escritorio/GRUPO/GRUPO03/BACKUPs
+	Hora de Cierre:                     150000
+[ 2020-06-15  18:57:00 ]-INF-Estado de la instalación: LISTA-instalar
+
+[ 2020-06-15  18:57:00 ]-INF-¿Confirma la instalación? (SI-NO): -instalar
+
+[ 2020-06-15  18:57:00 ]-INF-Se espera la respuesta del usuario-ingresarSiNo
+
+[ 2020-06-15  18:57:03 ]-INF-La respuesta del usuario fue: SI-ingresarSiNo
+
+[ 2020-06-15  18:57:03 ]-INF-El usuario ingreso SI, se instalara el sistema-instalar
+
+[ 2020-06-15  18:57:03 ]-INF-Se crean los directorios del sistema-crear_directorio
+
+[ 2020-06-15  18:57:03 ]-INF-Se crea el archivo de configuracion-crear_directorio
+
+[ 2020-06-15  18:57:03 ]-INF-Las tablas, los archivos y los scrpts se transportan a sus directorios correspondientes-crear_directorio
+
+[ 2020-06-15  18:57:03 ]-INF-INSTALACION TERMINADA-instalar
+
+[ 2020-06-15  18:57:03 ]-INF-FIN DEL SCRIPT-instalador
+
+
+
+
+[ 2020-06-15 18:58:25 ]-INF-Empieza Instalador-instalador
+
+[ 2020-06-15 18:58:25 ]-INF-El instalador no recibio ningun parametro-instalador
+
+[ 2020-06-15 18:58:25 ]-INF-Se verifica si el sistema ya se instalo-instalador
+
+[ 2020-06-15 18:58:25 ]-INF-Se comprueba si el sistema necesita reparacion-necesita_reparar
+
+[ 2020-06-15 18:58:25 ]-INF-El sistema ya fue instalado pero se lo necesita reparar, se le indica al usuario como hacerlo-instalador
+
+[ 2020-06-15 18:58:25 ]-INF-FIN DEL SCRIPT-instalador
+
+
+
+
+[ 2020-06-15 18:58:29 ]-INF-Empieza Instalador-instalador
+
+[ 2020-06-15 18:58:29 ]-INF-Se recibio como parametro '-r'-instalador
+
+[ 2020-06-15 18:58:29 ]-INF-Verificamos si el sistema ya se instalo-instalador
+
+[ 2020-06-15 18:58:29 ]-INF-Restauramos el sistema-instalador
+
+[ 2020-06-15 18:58:29 ]-INF-Se comprueba si el instalador.conf existe-restaurar
+
+[ 2020-06-15 18:58:29 ]-INF-Se comprueba las tablas, los directorios y los scripts existen-restaurar
+
+[ 2020-06-15 18:58:29 ]-INF-La tabla de comercios no se encuentra en la carpeta tab, se la va a tratar de recuperar-restaurar
+
+[ 2020-06-15 18:58:29 ]-INF-La tabla de comercios no pudo ser recuperada, el sistema no se puede recuperar-restaurar
+
+[ 2020-06-15 18:58:29 ]-INF-El sistema no puede repararse. Se requerira que el usuario se descargue un paquete nuevo e instale el sistema con el-instalador
+
+[ 2020-06-15 18:58:29 ]-INF-Seguir pasos del README.-instalador
+
+[ 2020-06-15 18:58:29 ]-INF-FIN DEL SCRIPT-instalador
+
+
+
+
