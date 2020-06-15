@@ -968,7 +968,7 @@ function loguearERROR()
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-ERR-"$1"-"$2
 
-	echo $linea >> $dir_log
+	echo -e  $linea"\n" >> $dir_log
 	return 0
 }
 
@@ -976,7 +976,7 @@ function loguearINFO()
 {
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
-	echo $linea >> $dir_log
+	echo -e $linea"\n" >> $dir_log
 	return 0
 }
 
@@ -985,7 +985,7 @@ function loguearALE()
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
 
-	echo $linea >> $dir_log
+	echo -e $linea"\n" >> $dir_log
 	return 0
 }
 
