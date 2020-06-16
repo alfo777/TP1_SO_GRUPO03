@@ -1,24 +1,754 @@
-[ 2020-06-15 17:48:12 ]-INF-COMIENZA INICIALIZADOR-inicializador
+[ 2020-06-15 23:24:07 ]-INF-COMIENZA INICIALIZADOR-inicializador
 
-[ 2020-06-15 17:48:12 ]-INF-Verificando instalacion-inicializador
+[ 2020-06-15 23:24:07 ]-INF-Verificando instalacion-inicializador
 
-[ 2020-06-15 17:48:12 ]-INF-Comprobando que el estado del sistema no es el estado inicial(sin instalar)-instalado
+[ 2020-06-15 23:24:07 ]-INF-Comprobando que el estado del sistema no es el estado inicial(sin instalar)-instalado
 
-[ 2020-06-15 17:48:12 ]-INF-El estado del sistema es el estado inicial, el sistema no esta instalado-instalado
+[ 2020-06-15 23:24:07 ]-INF-Comprobado que el sistema no esta en su estado inicial se busca el archivo de configuracion-instalado
 
-[ 2020-06-15 17:48:12 ]-INF-El sistema no esta instalado-inicializador
+[ 2020-06-15 23:24:08 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
 
-[ 2020-06-15 17:48:12 ]-INF-FIN INICIALIZADOR-inicializador
+[ 2020-06-15 23:24:08 ]-INF-No se encontro el directorio de tablas-instalado
+
+[ 2020-06-15 23:24:08 ]-INF-No se encontro la tabla de provincias-instalado
+
+[ 2020-06-15 23:24:08 ]-INF-No se encontro la tabla de comercios-instalado
+
+[ 2020-06-15 23:24:08 ]-INF-No se encontro la tabla de respuestas de gateway-instalado
+
+[ 2020-06-15 23:24:08 ]-INF-No se encontro el directorio para los archivos de salida-instalado
+
+[ 2020-06-15 23:24:08 ]-INF-El sistema esta instalado, pero la instalacion esta rota. Se cierra el inicializador y se indica al usuario que hacer para reparar el sistema-inicializador
+
+[ 2020-06-15 23:24:08 ]-INF-FIN INICIALIZADOR-inicializador
 
 
 
-[ 2020-06-15 17:48:25 ]-INF-Verificando que el ambiente no se haya roto-start
+[ 2020-06-15 23:24:35 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
 
-[ 2020-06-15 17:48:25 ]-INF-Comprobando si el sistema esta roto-instalado
+[ 2020-06-15 23:24:35 ]-INF-El ambiente del sistema no ha sido lanzado todavia, el proceso no puede lanzarse-start
 
-[ 2020-06-15 17:48:25 ]-INF-No se encontro el archivo de configuracion-instalado
 
-[ 2020-06-15 17:48:25 ]-INF-Instalacion rota, se cierra start y se indica al usuario como reparar al sistema-start
+
+[ 2020-06-15 23:24:59 ]-INF-COMIENZA INICIALIZADOR-inicializador
+
+[ 2020-06-15 23:24:59 ]-INF-Verificando instalacion-inicializador
+
+[ 2020-06-15 23:24:59 ]-INF-Comprobando que el estado del sistema no es el estado inicial(sin instalar)-instalado
+
+[ 2020-06-15 23:24:59 ]-INF-Comprobado que el sistema no esta en su estado inicial se busca el archivo de configuracion-instalado
+
+[ 2020-06-15 23:24:59 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:24:59 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-15 23:24:59 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-15 23:24:59 ]-INF-El sistema no esta inicializado, se procedera con la inicializacion-inicializador
+
+[ 2020-06-15 23:24:59 ]-INF-INICIALIZACION-inicializador
+
+[ 2020-06-15 23:24:59 ]-INF-Se verifican los permisos-verificar_permisos
+
+[ 2020-06-15 23:24:59 ]-INF-Verificacion de permisos terminada-verificar_permisos
+
+[ 2020-06-15 23:24:59 ]-INF-Se exportan las variables de ambiente-inicializador
+
+[ 2020-06-15 23:24:59 ]-INF-El ambiente para lanzar el proceso ya fue levantado. inicializacion exitosa-inicializador
+
+[ 2020-06-15 23:24:59 ]-INF-El proceso puede ser lanzado desde el inicializador o puede lanzarse ejecutando el scritp-inicializador
+
+[ 2020-06-15 23:24:59 ]-INF-Se le da la opcion al usuario de lanzar el proceso desde el inicializador o no-inicializador
+
+[ 2020-06-15 23:25:01 ]-INF-El usuario eligio: SI. Se llamara a start.sh para que lanzar al proceso-inicializador
+
+[ 2020-06-15 23:25:01 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-15 23:25:01 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-15 23:25:01 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:25:01 ]-INF-Se lanzo el proceso con id: 31123-start
+
+[ 2020-06-15 23:25:01 ]-INF-Hora de cierre:150000-start
+
+
+
+[ 2020-06-15 23:25:01 ]-INF-FIN INICIALIZADOR-inicializador
+
+
+
+[ 2020-06-15 23:25:09 ]-INF-COMIENZA INICIALIZADOR-inicializador
+
+[ 2020-06-15 23:25:09 ]-INF-Verificando instalacion-inicializador
+
+[ 2020-06-15 23:25:09 ]-INF-Comprobando que el estado del sistema no es el estado inicial(sin instalar)-instalado
+
+[ 2020-06-15 23:25:09 ]-INF-Comprobado que el sistema no esta en su estado inicial se busca el archivo de configuracion-instalado
+
+[ 2020-06-15 23:25:09 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:25:09 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-15 23:25:09 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-15 23:25:09 ]-INF-El sistema ya se inicializo-inicializador
+
+[ 2020-06-15 23:25:09 ]-INF-FIN INICIALIZADOR-inicializador
+
+
+
+[ 2020-06-15 23:25:12 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-15 23:25:12 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-15 23:25:12 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:25:13 ]-INF-Ya existe un proceso en ejecucion, no puede lanzarse otro-start
+
+
+
+[ 2020-06-15 23:35:33 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:35:33 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-15 23:35:33 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-15 23:35:33 ]-INF-El sistema no esta inicializado, se procedera con la inicializacion-inicializador
+
+[ 2020-06-15 23:35:33 ]-INF-INICIALIZACION-inicializador
+
+[ 2020-06-15 23:35:33 ]-INF-Se verifican los permisos-verificar_permisos
+
+[ 2020-06-15 23:35:34 ]-INF-Verificacion de permisos terminada-verificar_permisos
+
+[ 2020-06-15 23:35:34 ]-INF-Se exportan las variables de ambiente-inicializador
+
+[ 2020-06-15 23:35:34 ]-INF-El ambiente para lanzar el proceso ya fue levantado. inicializacion exitosa-inicializador
+
+[ 2020-06-15 23:35:34 ]-INF-El proceso puede ser lanzado desde el inicializador o puede lanzarse ejecutando el scritp-inicializador
+
+[ 2020-06-15 23:35:34 ]-INF-Se le da la opcion al usuario de lanzar el proceso desde el inicializador o no-inicializador
+
+[ 2020-06-15 23:35:36 ]-INF-El usuario eligio: SI. Se llamara a start.sh para que lanzar al proceso-inicializador
+
+[ 2020-06-15 23:35:36 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-15 23:35:36 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-15 23:35:36 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:35:36 ]-INF-Se lanzo el proceso con id: 995-start
+
+[ 2020-06-15 23:35:36 ]-INF-Hora de cierre:150000-start
+
+
+
+[ 2020-06-15 23:35:36 ]-INF-FIN INICIALIZADOR-inicializador
+
+
+
+[ 2020-06-15 23:37:27 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:37:27 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-15 23:37:27 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-15 23:37:27 ]-INF-El sistema no esta inicializado, se procedera con la inicializacion-inicializador
+
+[ 2020-06-15 23:37:27 ]-INF-INICIALIZACION-inicializador
+
+[ 2020-06-15 23:37:27 ]-INF-Se verifican los permisos-verificar_permisos
+
+[ 2020-06-15 23:37:27 ]-INF-Verificacion de permisos terminada-verificar_permisos
+
+[ 2020-06-15 23:37:27 ]-INF-Se exportan las variables de ambiente-inicializador
+
+[ 2020-06-15 23:37:27 ]-INF-El ambiente para lanzar el proceso ya fue levantado. inicializacion exitosa-inicializador
+
+[ 2020-06-15 23:37:27 ]-INF-El proceso puede ser lanzado desde el inicializador o puede lanzarse ejecutando el scritp-inicializador
+
+[ 2020-06-15 23:37:27 ]-INF-Se le da la opcion al usuario de lanzar el proceso desde el inicializador o no-inicializador
+
+[ 2020-06-15 23:37:29 ]-INF-El usuario eligio: NO. Se indica como llamar a start.sh para arrancar el proceso y se cierra el inicializador-inicializador
+
+[ 2020-06-15 23:37:29 ]-INF-FIN INICIALIZADOR-inicializador
+
+
+
+[ 2020-06-15 23:37:31 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-15 23:37:31 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-15 23:37:31 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:37:31 ]-INF-Se lanzo el proceso con id: 1187-start
+
+[ 2020-06-15 23:37:31 ]-INF-Hora de cierre:150000-start
+
+
+
+[ 2020-06-15 23:37:37 ]-INF-COMIENZA INICIALIZADOR-inicializador
+
+[ 2020-06-15 23:37:37 ]-INF-Verificando instalacion-inicializador
+
+[ 2020-06-15 23:37:37 ]-INF-Comprobando que el estado del sistema no es el estado inicial(sin instalar)-instalado
+
+[ 2020-06-15 23:37:37 ]-INF-Comprobado que el sistema no esta en su estado inicial se busca el archivo de configuracion-instalado
+
+[ 2020-06-15 23:37:37 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:37:37 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-15 23:37:37 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-15 23:37:37 ]-INF-El sistema ya se inicializo-inicializador
+
+[ 2020-06-15 23:37:37 ]-INF-FIN INICIALIZADOR-inicializador
+
+
+
+[ 2020-06-15 23:37:38 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-15 23:37:38 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-15 23:37:38 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:37:38 ]-INF-Ya existe un proceso en ejecucion, no puede lanzarse otro-start
+
+
+
+[ 2020-06-15 23:38:29 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:38:29 ]-INF-El ambiente del sistema no ha sido lanzado todavia, el proceso no puede lanzarse-start
+
+
+
+[ 2020-06-15 23:38:31 ]-INF-COMIENZA INICIALIZADOR-inicializador
+
+[ 2020-06-15 23:38:31 ]-INF-Verificando instalacion-inicializador
+
+[ 2020-06-15 23:38:31 ]-INF-Comprobando que el estado del sistema no es el estado inicial(sin instalar)-instalado
+
+[ 2020-06-15 23:38:31 ]-INF-Comprobado que el sistema no esta en su estado inicial se busca el archivo de configuracion-instalado
+
+[ 2020-06-15 23:38:31 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:38:31 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-15 23:38:31 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-15 23:38:31 ]-INF-El sistema no esta inicializado, se procedera con la inicializacion-inicializador
+
+[ 2020-06-15 23:38:31 ]-INF-INICIALIZACION-inicializador
+
+[ 2020-06-15 23:38:31 ]-INF-Se verifican los permisos-verificar_permisos
+
+[ 2020-06-15 23:38:31 ]-INF-La funcion stop no tiene los permisos correctos, se lo corregira-verificar_permisos
+
+[ 2020-06-15 23:38:31 ]-INF-Verificacion de permisos terminada-verificar_permisos
+
+[ 2020-06-15 23:38:31 ]-INF-Se exportan las variables de ambiente-inicializador
+
+[ 2020-06-15 23:38:31 ]-INF-El ambiente para lanzar el proceso ya fue levantado. inicializacion exitosa-inicializador
+
+[ 2020-06-15 23:38:31 ]-INF-El proceso puede ser lanzado desde el inicializador o puede lanzarse ejecutando el scritp-inicializador
+
+[ 2020-06-15 23:38:31 ]-INF-Se le da la opcion al usuario de lanzar el proceso desde el inicializador o no-inicializador
+
+[ 2020-06-15 23:38:33 ]-INF-El usuario eligio: SI. Se llamara a start.sh para que lanzar al proceso-inicializador
+
+[ 2020-06-15 23:38:33 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-15 23:38:33 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-15 23:38:33 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:38:33 ]-INF-Se lanzo el proceso con id: 1515-start
+
+[ 2020-06-15 23:38:33 ]-INF-Hora de cierre:150000-start
+
+
+
+[ 2020-06-15 23:38:33 ]-INF-FIN INICIALIZADOR-inicializador
+
+
+
+[ 2020-06-15 23:38:36 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-15 23:38:36 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-15 23:38:36 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:38:36 ]-INF-Ya existe un proceso en ejecucion, no puede lanzarse otro-start
+
+
+
+[ 2020-06-15 23:55:35 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:55:35 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-15 23:55:35 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-15 23:55:35 ]-INF-El sistema no esta inicializado, se procedera con la inicializacion-inicializador
+
+[ 2020-06-15 23:55:35 ]-INF-INICIALIZACION-inicializador
+
+[ 2020-06-15 23:55:35 ]-INF-Se verifican los permisos-verificar_permisos
+
+[ 2020-06-15 23:55:35 ]-INF-Verificacion de permisos terminada-verificar_permisos
+
+[ 2020-06-15 23:55:35 ]-INF-Se exportan las variables de ambiente-inicializador
+
+[ 2020-06-15 23:55:35 ]-INF-El ambiente para lanzar el proceso ya fue levantado. inicializacion exitosa-inicializador
+
+[ 2020-06-15 23:55:35 ]-INF-El proceso puede ser lanzado desde el inicializador o puede lanzarse ejecutando el scritp-inicializador
+
+[ 2020-06-15 23:55:35 ]-INF-Se le da la opcion al usuario de lanzar el proceso desde el inicializador o no-inicializador
+
+[ 2020-06-15 23:55:38 ]-INF-El usuario eligio: SI. Se llamara a start.sh para que lanzar al proceso-inicializador
+
+[ 2020-06-15 23:55:38 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-15 23:55:38 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-15 23:55:38 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:55:38 ]-INF-Se lanzo el proceso con id: 1833-start
+
+[ 2020-06-15 23:55:38 ]-INF-Hora de cierre:150000-start
+
+
+
+[ 2020-06-15 23:55:38 ]-INF-FIN INICIALIZADOR-inicializador
+
+
+
+[ 2020-06-15 23:56:57 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:56:57 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-15 23:56:57 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-15 23:56:57 ]-INF-El sistema no esta inicializado, se procedera con la inicializacion-inicializador
+
+[ 2020-06-15 23:56:57 ]-INF-INICIALIZACION-inicializador
+
+[ 2020-06-15 23:56:57 ]-INF-Se verifican los permisos-verificar_permisos
+
+[ 2020-06-15 23:56:57 ]-INF-La funcion stop no tiene los permisos correctos, se lo corregira-verificar_permisos
+
+[ 2020-06-15 23:56:57 ]-INF-Verificacion de permisos terminada-verificar_permisos
+
+[ 2020-06-15 23:56:57 ]-INF-Se exportan las variables de ambiente-inicializador
+
+[ 2020-06-15 23:56:57 ]-INF-El ambiente para lanzar el proceso ya fue levantado. inicializacion exitosa-inicializador
+
+[ 2020-06-15 23:56:57 ]-INF-El proceso puede ser lanzado desde el inicializador o puede lanzarse ejecutando el scritp-inicializador
+
+[ 2020-06-15 23:56:57 ]-INF-Se le da la opcion al usuario de lanzar el proceso desde el inicializador o no-inicializador
+
+[ 2020-06-15 23:56:58 ]-INF-El usuario eligio: SI. Se llamara a start.sh para que lanzar al proceso-inicializador
+
+[ 2020-06-15 23:56:58 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-15 23:56:58 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-15 23:56:58 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:56:58 ]-INF-Se lanzo el proceso con id: 2135-start
+
+[ 2020-06-15 23:56:58 ]-INF-Hora de cierre:150000-start
+
+
+
+[ 2020-06-15 23:56:58 ]-INF-FIN INICIALIZADOR-inicializador
+
+
+
+[ 2020-06-15 23:57:10 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:57:10 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-15 23:57:10 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-15 23:57:10 ]-INF-El sistema no esta inicializado, se procedera con la inicializacion-inicializador
+
+[ 2020-06-15 23:57:10 ]-INF-INICIALIZACION-inicializador
+
+[ 2020-06-15 23:57:10 ]-INF-Se verifican los permisos-verificar_permisos
+
+[ 2020-06-15 23:57:10 ]-INF-Verificacion de permisos terminada-verificar_permisos
+
+[ 2020-06-15 23:57:10 ]-INF-Se exportan las variables de ambiente-inicializador
+
+[ 2020-06-15 23:57:10 ]-INF-El ambiente para lanzar el proceso ya fue levantado. inicializacion exitosa-inicializador
+
+[ 2020-06-15 23:57:10 ]-INF-El proceso puede ser lanzado desde el inicializador o puede lanzarse ejecutando el scritp-inicializador
+
+[ 2020-06-15 23:57:10 ]-INF-Se le da la opcion al usuario de lanzar el proceso desde el inicializador o no-inicializador
+
+[ 2020-06-15 23:57:13 ]-INF-El usuario eligio: NO. Se indica como llamar a start.sh para arrancar el proceso y se cierra el inicializador-inicializador
+
+[ 2020-06-15 23:57:13 ]-INF-FIN INICIALIZADOR-inicializador
+
+
+
+[ 2020-06-15 23:57:16 ]-INF-COMIENZA INICIALIZADOR-inicializador
+
+[ 2020-06-15 23:57:16 ]-INF-Verificando instalacion-inicializador
+
+[ 2020-06-15 23:57:16 ]-INF-Comprobando que el estado del sistema no es el estado inicial(sin instalar)-instalado
+
+[ 2020-06-15 23:57:16 ]-INF-Comprobado que el sistema no esta en su estado inicial se busca el archivo de configuracion-instalado
+
+[ 2020-06-15 23:57:16 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:57:16 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-15 23:57:16 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-15 23:57:16 ]-INF-El sistema ya se inicializo-inicializador
+
+[ 2020-06-15 23:57:16 ]-INF-FIN INICIALIZADOR-inicializador
+
+
+
+[ 2020-06-15 23:57:20 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-15 23:57:20 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-15 23:57:20 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:57:20 ]-INF-Se lanzo el proceso con id: 2366-start
+
+[ 2020-06-15 23:57:20 ]-INF-Hora de cierre:150000-start
+
+
+
+[ 2020-06-15 23:57:28 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-15 23:57:28 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-15 23:57:28 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:57:28 ]-INF-Ya existe un proceso en ejecucion, no puede lanzarse otro-start
+
+
+
+[ 2020-06-15 23:57:30 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-15 23:57:30 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-15 23:57:30 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:57:30 ]-INF-Ya existe un proceso en ejecucion, no puede lanzarse otro-start
+
+
+
+[ 2020-06-15 23:57:31 ]-INF-COMIENZA INICIALIZADOR-inicializador
+
+[ 2020-06-15 23:57:31 ]-INF-Verificando instalacion-inicializador
+
+[ 2020-06-15 23:57:31 ]-INF-Comprobando que el estado del sistema no es el estado inicial(sin instalar)-instalado
+
+[ 2020-06-15 23:57:31 ]-INF-Comprobado que el sistema no esta en su estado inicial se busca el archivo de configuracion-instalado
+
+[ 2020-06-15 23:57:31 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:57:31 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-15 23:57:31 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-15 23:57:31 ]-INF-El sistema ya se inicializo-inicializador
+
+[ 2020-06-15 23:57:31 ]-INF-FIN INICIALIZADOR-inicializador
+
+
+
+[ 2020-06-15 23:58:11 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:58:11 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-15 23:58:11 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-15 23:58:11 ]-INF-El sistema no esta inicializado, se procedera con la inicializacion-inicializador
+
+[ 2020-06-15 23:58:11 ]-INF-INICIALIZACION-inicializador
+
+[ 2020-06-15 23:58:11 ]-INF-Se verifican los permisos-verificar_permisos
+
+[ 2020-06-15 23:58:11 ]-INF-La funcion stop no tiene los permisos correctos, se lo corregira-verificar_permisos
+
+[ 2020-06-15 23:58:11 ]-INF-Verificacion de permisos terminada-verificar_permisos
+
+[ 2020-06-15 23:58:11 ]-INF-Se exportan las variables de ambiente-inicializador
+
+[ 2020-06-15 23:58:11 ]-INF-El ambiente para lanzar el proceso ya fue levantado. inicializacion exitosa-inicializador
+
+[ 2020-06-15 23:58:11 ]-INF-El proceso puede ser lanzado desde el inicializador o puede lanzarse ejecutando el scritp-inicializador
+
+[ 2020-06-15 23:58:11 ]-INF-Se le da la opcion al usuario de lanzar el proceso desde el inicializador o no-inicializador
+
+[ 2020-06-15 23:58:13 ]-INF-El usuario eligio: SI. Se llamara a start.sh para que lanzar al proceso-inicializador
+
+[ 2020-06-15 23:58:13 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-15 23:58:13 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-15 23:58:13 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:58:13 ]-INF-Se lanzo el proceso con id: 2576-start
+
+[ 2020-06-15 23:58:13 ]-INF-Hora de cierre:150000-start
+
+
+
+[ 2020-06-15 23:58:13 ]-INF-FIN INICIALIZADOR-inicializador
+
+
+
+[ 2020-06-15 23:58:54 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:58:54 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-15 23:58:54 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-15 23:58:54 ]-INF-El sistema no esta inicializado, se procedera con la inicializacion-inicializador
+
+[ 2020-06-15 23:58:54 ]-INF-INICIALIZACION-inicializador
+
+[ 2020-06-15 23:58:54 ]-INF-Se verifican los permisos-verificar_permisos
+
+[ 2020-06-15 23:58:54 ]-INF-Verificacion de permisos terminada-verificar_permisos
+
+[ 2020-06-15 23:58:54 ]-INF-Se exportan las variables de ambiente-inicializador
+
+[ 2020-06-15 23:58:54 ]-INF-El ambiente para lanzar el proceso ya fue levantado. inicializacion exitosa-inicializador
+
+[ 2020-06-15 23:58:54 ]-INF-El proceso puede ser lanzado desde el inicializador o puede lanzarse ejecutando el scritp-inicializador
+
+[ 2020-06-15 23:58:54 ]-INF-Se le da la opcion al usuario de lanzar el proceso desde el inicializador o no-inicializador
+
+[ 2020-06-15 23:58:58 ]-INF-El usuario eligio: NO. Se indica como llamar a start.sh para arrancar el proceso y se cierra el inicializador-inicializador
+
+[ 2020-06-15 23:58:58 ]-INF-FIN INICIALIZADOR-inicializador
+
+
+
+[ 2020-06-15 23:59:01 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-15 23:59:01 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-15 23:59:01 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:59:01 ]-INF-Se lanzo el proceso con id: 2736-start
+
+[ 2020-06-15 23:59:01 ]-INF-Hora de cierre:150000-start
+
+
+
+[ 2020-06-15 23:59:36 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:59:36 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-15 23:59:36 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-15 23:59:36 ]-INF-El sistema no esta inicializado, se procedera con la inicializacion-inicializador
+
+[ 2020-06-15 23:59:36 ]-INF-INICIALIZACION-inicializador
+
+[ 2020-06-15 23:59:36 ]-INF-Se verifican los permisos-verificar_permisos
+
+[ 2020-06-15 23:59:36 ]-INF-Verificacion de permisos terminada-verificar_permisos
+
+[ 2020-06-15 23:59:36 ]-INF-Se exportan las variables de ambiente-inicializador
+
+[ 2020-06-15 23:59:36 ]-INF-El ambiente para lanzar el proceso ya fue levantado. inicializacion exitosa-inicializador
+
+[ 2020-06-15 23:59:36 ]-INF-El proceso puede ser lanzado desde el inicializador o puede lanzarse ejecutando el scritp-inicializador
+
+[ 2020-06-15 23:59:36 ]-INF-Se le da la opcion al usuario de lanzar el proceso desde el inicializador o no-inicializador
+
+[ 2020-06-15 23:59:38 ]-INF-El usuario eligio: SI. Se llamara a start.sh para que lanzar al proceso-inicializador
+
+[ 2020-06-15 23:59:38 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-15 23:59:38 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-15 23:59:38 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-15 23:59:39 ]-INF-Se lanzo el proceso con id: 2888-start
+
+[ 2020-06-15 23:59:39 ]-INF-Hora de cierre:150000-start
+
+
+
+[ 2020-06-15 23:59:39 ]-INF-FIN INICIALIZADOR-inicializador
+
+
+
+[ 2020-06-16 00:28:34 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-16 00:28:34 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-16 00:28:34 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-16 00:28:34 ]-INF-El sistema no esta inicializado, se procedera con la inicializacion-inicializador
+
+[ 2020-06-16 00:28:34 ]-INF-INICIALIZACION-inicializador
+
+[ 2020-06-16 00:28:34 ]-INF-Se verifican los permisos-verificar_permisos
+
+[ 2020-06-16 00:28:34 ]-INF-El proceso no tiene los permisos correctos, se lo corregira-verificar_permisos
+
+[ 2020-06-16 00:28:34 ]-INF-Verificacion de permisos terminada-verificar_permisos
+
+[ 2020-06-16 00:28:34 ]-INF-Se exportan las variables de ambiente-inicializador
+
+[ 2020-06-16 00:28:34 ]-INF-El ambiente para lanzar el proceso ya fue levantado. inicializacion exitosa-inicializador
+
+[ 2020-06-16 00:28:34 ]-INF-El proceso puede ser lanzado desde el inicializador o puede lanzarse ejecutando el scritp-inicializador
+
+[ 2020-06-16 00:28:34 ]-INF-Se le da la opcion al usuario de lanzar el proceso desde el inicializador o no-inicializador
+
+[ 2020-06-16 00:28:35 ]-INF-El usuario eligio: SI. Se llamara a start.sh para que lanzar al proceso-inicializador
+
+[ 2020-06-16 00:28:35 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-16 00:28:35 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-16 00:28:35 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-16 00:28:35 ]-INF-Se lanzo el proceso con id: -start
+
+[ 2020-06-16 00:28:35 ]-INF-Hora de cierre:150000-start
+
+
+
+[ 2020-06-16 00:28:35 ]-INF-FIN INICIALIZADOR-inicializador
+
+
+
+[ 2020-06-16 00:29:16 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-16 00:29:16 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-16 00:29:16 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-16 00:29:16 ]-INF-El sistema no esta inicializado, se procedera con la inicializacion-inicializador
+
+[ 2020-06-16 00:29:16 ]-INF-INICIALIZACION-inicializador
+
+[ 2020-06-16 00:29:16 ]-INF-Se verifican los permisos-verificar_permisos
+
+[ 2020-06-16 00:29:16 ]-INF-Verificacion de permisos terminada-verificar_permisos
+
+[ 2020-06-16 00:29:16 ]-INF-Se exportan las variables de ambiente-inicializador
+
+[ 2020-06-16 00:29:16 ]-INF-El ambiente para lanzar el proceso ya fue levantado. inicializacion exitosa-inicializador
+
+[ 2020-06-16 00:29:16 ]-INF-El proceso puede ser lanzado desde el inicializador o puede lanzarse ejecutando el scritp-inicializador
+
+[ 2020-06-16 00:29:16 ]-INF-Se le da la opcion al usuario de lanzar el proceso desde el inicializador o no-inicializador
+
+[ 2020-06-16 00:29:18 ]-INF-El usuario eligio: SI. Se llamara a start.sh para que lanzar al proceso-inicializador
+
+[ 2020-06-16 00:29:18 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-16 00:29:18 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-16 00:29:18 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-16 00:29:18 ]-INF-Se lanzo el proceso con id: -start
+
+[ 2020-06-16 00:29:18 ]-INF-Hora de cierre:150000-start
+
+
+
+[ 2020-06-16 00:29:18 ]-INF-FIN INICIALIZADOR-inicializador
+
+
+
+[ 2020-06-16 00:29:41 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-16 00:29:41 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-16 00:29:41 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-16 00:29:41 ]-INF-El sistema no esta inicializado, se procedera con la inicializacion-inicializador
+
+[ 2020-06-16 00:29:41 ]-INF-INICIALIZACION-inicializador
+
+[ 2020-06-16 00:29:41 ]-INF-Se verifican los permisos-verificar_permisos
+
+[ 2020-06-16 00:29:41 ]-INF-Verificacion de permisos terminada-verificar_permisos
+
+[ 2020-06-16 00:29:41 ]-INF-Se exportan las variables de ambiente-inicializador
+
+[ 2020-06-16 00:29:41 ]-INF-El ambiente para lanzar el proceso ya fue levantado. inicializacion exitosa-inicializador
+
+[ 2020-06-16 00:29:41 ]-INF-El proceso puede ser lanzado desde el inicializador o puede lanzarse ejecutando el scritp-inicializador
+
+[ 2020-06-16 00:29:41 ]-INF-Se le da la opcion al usuario de lanzar el proceso desde el inicializador o no-inicializador
+
+[ 2020-06-16 00:29:43 ]-INF-El usuario eligio: SI. Se llamara a start.sh para que lanzar al proceso-inicializador
+
+[ 2020-06-16 00:29:43 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-16 00:29:43 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-16 00:29:43 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-16 00:29:43 ]-INF-Se lanzo el proceso con id: -start
+
+[ 2020-06-16 00:29:43 ]-INF-Hora de cierre:150000-start
+
+
+
+[ 2020-06-16 00:29:43 ]-INF-FIN INICIALIZADOR-inicializador
+
+
+
+[ 2020-06-16 00:30:13 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-16 00:30:13 ]-INF-El sistema esta instalado-inicializador
+
+[ 2020-06-16 00:30:13 ]-INF-Verificando inicializacion-inicializador
+
+[ 2020-06-16 00:30:13 ]-INF-El sistema no esta inicializado, se procedera con la inicializacion-inicializador
+
+[ 2020-06-16 00:30:13 ]-INF-INICIALIZACION-inicializador
+
+[ 2020-06-16 00:30:13 ]-INF-Se verifican los permisos-verificar_permisos
+
+[ 2020-06-16 00:30:13 ]-INF-El proceso no tiene los permisos correctos, se lo corregira-verificar_permisos
+
+[ 2020-06-16 00:30:13 ]-INF-Verificacion de permisos terminada-verificar_permisos
+
+[ 2020-06-16 00:30:13 ]-INF-Se exportan las variables de ambiente-inicializador
+
+[ 2020-06-16 00:30:13 ]-INF-El ambiente para lanzar el proceso ya fue levantado. inicializacion exitosa-inicializador
+
+[ 2020-06-16 00:30:13 ]-INF-El proceso puede ser lanzado desde el inicializador o puede lanzarse ejecutando el scritp-inicializador
+
+[ 2020-06-16 00:30:13 ]-INF-Se le da la opcion al usuario de lanzar el proceso desde el inicializador o no-inicializador
+
+[ 2020-06-16 00:30:14 ]-INF-El usuario eligio: SI. Se llamara a start.sh para que lanzar al proceso-inicializador
+
+[ 2020-06-16 00:30:14 ]-INF-Verificando si el ambiente esta levantado o no-start
+
+[ 2020-06-16 00:30:14 ]-INF-Comprobando si el sistema esta roto-instalado
+
+[ 2020-06-16 00:30:14 ]-INF-Hay archivo de configuracion, el sistema se lo considera como instalado. Se comprueba si la instalacion esta rota o no-instalado
+
+[ 2020-06-16 00:30:14 ]-INF-Se lanzo el proceso con id: 12993-start
+
+[ 2020-06-16 00:30:14 ]-INF-Hora de cierre:150000-start
+
+
+
+[ 2020-06-16 00:30:14 ]-INF-FIN INICIALIZADOR-inicializador
 
 
 
