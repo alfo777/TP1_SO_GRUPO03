@@ -458,11 +458,9 @@ function validar_registro(){
 		formato_invalido=`echo $registro | cut -d "," -f $pos | grep '".*": ".*"' | wc -w`
 		if [ $formato_invalido -ne 2 ]
 		then
-			loguearINFO "El campo isO38_cAuthorizationResponse esta en el registro pero su formato es invalido, se va a rechazar este registro" "validar_registro"
 			hay_campo_7=0
 			motivo_fi=$motivo_fi" isO38_cAuthorizationResponse, "
 		else
-			loguearINFO "Campo isO38_cAuthorizationResponse encontrado y validado" "validar_registro"
 		fi
 		let "pos=$pos+1"
 
@@ -871,13 +869,23 @@ function loguearERROR()
 	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/proceso.log" ]
 	then
 		dir_log="$DIRPROC/proceso.log"
-		cat "$dir_actual/proceso.log" >> "$dir_log"
-		rm "$dir_actual/proceso.log"
+		if [ -f "$dir_actual/proceso.log" ]
+		then
+			cat "$dir_actual/proceso.log" >> "$dir_log"
+			rm "$dir_actual/proceso.log"
+		fi
 	elif [ ! -d "$DIRPROC" ]
 	then
 		dir_log="$dir_actual/proceso.log"
-	else
+
+	elif [ -f "$DIRPROC/proceso.log" ]
+	then
 		dir_log="$DIRPROC/proceso.log"
+		
+		if [ -f "$dir_actual/proceso.log" ]
+		then
+			rm "$dir_actual/proceso.log"
+		fi
 	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-ERR-"$1"-"$2
@@ -891,13 +899,23 @@ function loguearINFO()
 	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/proceso.log" ]
 	then
 		dir_log="$DIRPROC/proceso.log"
-		cat "$dir_actual/proceso.log" >> "$dir_log"
-		rm "$dir_actual/proceso.log"
+		if [ -f "$dir_actual/proceso.log" ]
+		then
+			cat "$dir_actual/proceso.log" >> "$dir_log"
+			rm "$dir_actual/proceso.log"
+		fi
 	elif [ ! -d "$DIRPROC" ]
 	then
 		dir_log="$dir_actual/proceso.log"
-	else
+
+	elif [ -f "$DIRPROC/proceso.log" ]
+	then
 		dir_log="$DIRPROC/proceso.log"
+		
+		if [ -f "$dir_actual/proceso.log" ]
+		then
+			rm "$dir_actual/proceso.log"
+		fi
 	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
@@ -910,13 +928,23 @@ function loguearALE()
 	if [ -d "$DIRPROC" ] && [ ! -f "$DIRPROC/proceso.log" ]
 	then
 		dir_log="$DIRPROC/proceso.log"
-		cat "$dir_actual/proceso.log" >> "$dir_log"
-		rm "$dir_actual/proceso.log"
+		if [ -f "$dir_actual/proceso.log" ]
+		then
+			cat "$dir_actual/proceso.log" >> "$dir_log"
+			rm "$dir_actual/proceso.log"
+		fi
 	elif [ ! -d "$DIRPROC" ]
 	then
 		dir_log="$dir_actual/proceso.log"
-	else
+
+	elif [ -f "$DIRPROC/proceso.log" ]
+	then
 		dir_log="$DIRPROC/proceso.log"
+		
+		if [ -f "$dir_actual/proceso.log" ]
+		then
+			rm "$dir_actual/proceso.log"
+		fi
 	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
@@ -941,7 +969,7 @@ then
 	loguearERROR "Este proceso no recibe parametros" "proceso"
 	loguearINFO "FIN DEL PROCESO" "proceso"
 	echo "Error: este proceso no recibe parametros"
-	echo -e "\n" >> $dir_log
+	echo -e "\n" >> "$dir_log"
 	exit 1
 fi
 
@@ -953,7 +981,7 @@ then
 	loguearERROR "Este proceso no se lanzo con el comando start,el proceso se va a cerrar" "proceso"
 	loguearINFO "FIN DEL PROCESO" "proceso"
 	echo "Error: solo el comando start puede arrancar al proceso"
-	echo -e "\n" >> $dir_log
+	echo -e "\n" >> "$dir_log"
 	exit 1
 fi
 
@@ -976,12 +1004,6 @@ then
 	exit 1
 fi
 
-cat "$dir_log" >> "$DIRPROC/proceso.log"
-
-rm "proceso.log"
-
-dir_log="$DIRPROC/proceso.log"
-
 loguearINFO "Hay ambiente para ejecutar el proceso, el mismo fue lanzado por start, el proceso iniciara exitosamente" "proceso"
 
 iteracion=1
@@ -998,7 +1020,7 @@ do
 	if [ $? -eq 0 ]
 	then
 		loguearINFO "El directorio del novedades esta vacio, el proceso dormira 1 minuto y empezara un nuevo ciclo" "proceso"		
-		sleep 0m
+		sleep 1m
 		let "iteracion=$iteracion+1"
 		continue
 	fi
@@ -1017,7 +1039,7 @@ do
 	loguearINFO "FIN CICLO: "$iteracion "proceso"
 
 	let "iteracion=$iteracion+1"
-	sleep 0m 
+	sleep 1m 
 done
 
 loguearINFO "El proceso alcanzo las 10000 iteraciones. Por esta razon se cerrara exitosamente" "proceso"

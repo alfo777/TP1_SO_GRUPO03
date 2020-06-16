@@ -13,8 +13,15 @@ function loguearERROR()
 	elif [ ! -d "$DIRPROC" ]
 	then
 		dir_log="$dir_actual/inicializador.log"
-	else
+
+	elif [ -f "$DIRPROC/inicializador.log" ]
+	then
 		dir_log="$DIRPROC/inicializador.log"
+
+		if [ -f "$dir_actual/inicializador.log" ]
+		then
+			rm "$dir_actual/inicializador.log"
+		fi
 	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-ERR-"$1"-"$2
@@ -33,8 +40,16 @@ function loguearINFO()
 	elif [ ! -d "$DIRPROC" ]
 	then
 		dir_log="$dir_actual/inicializador.log"
-	else
+
+	elif [ -f "$DIRPROC/inicializador.log" ]
+	then
+
 		dir_log="$DIRPROC/inicializador.log"
+
+		if [ -f "$dir_actual/inicializador.log" ]
+		then
+			rm "$dir_actual/inicializador.log"
+		fi
 	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
@@ -52,8 +67,16 @@ function loguearALE()
 	elif [ ! -d "$DIRPROC" ]
 	then
 		dir_log="$dir_actual/inicializador.log"
-	else
+
+	elif [ -f "$DIRPROC/inicializador.log" ]
+	then
+
 		dir_log="$DIRPROC/inicializador.log"
+
+		if [ -f "$dir_actual/inicializador.log" ]
+		then
+			rm "$dir_actual/inicializador.log"
+		fi
 	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
@@ -245,8 +268,8 @@ then
 else
 
 
-	loguearINFO "Verificando que el ambiente no se haya roto" "start"
-	echo -e "\nVerificando que el ambiente no se haya roto:"
+	loguearINFO "Verificando si el ambiente esta levantado o no" "start"
+	echo -e "\nVerificando si el ambiente esta levantado o no:"
 
 	instalado
 
@@ -260,7 +283,8 @@ else
 
 	elif [[ $HAYAMBIENTE == "" ]] && [ $opcion -eq 1 ]
 	then
-		echo "El ambiente del sistema no ha sido lanzado todavia, el proceso no puede lanzarse."
+		loguearALE "El ambiente del sistema no ha sido lanzado todavia, el proceso no puede lanzarse" "start"
+		echo -e "\nEl ambiente del sistema no ha sido lanzado todavia, el proceso no puede lanzarse."
 	else
 
 		PROCESOID=`ps | grep 'proceso.sh$'`
@@ -271,22 +295,10 @@ else
 
 		if [[ $PROCESOID != "" ]]
 		then
-			echo "Ya existe un proceso en ejecucion."
+			loguearALE "Ya existe un proceso en ejecucion, no puede lanzarse otro" "start"
+			echo "Ya existe un proceso en ejecucion, no puede lanzarse otro."
 		else
 			echo "Lanzando proceso"
-
-			loguearINFO "Se exportan las variables de ambiente" "start"
-
-			export GRUPO
-			export DIRINST
-			export DIRBIN
-			export DIRTAB
-			export DIRNOV
-			export DIROK
-			export DIRNOK
-			export DIRPROC
-			export DIRSAL
-			export HCIERRE
 
 			if [ ! -f "$DIRBIN/proceso.sh" ]
 			then
@@ -308,8 +320,13 @@ else
 			PROCESOID=$id
 
 			echo "Se lanzo el proceso con id: "$PROCESOID
+			echo "Hora de cierre: "$HCIERRE
+
+			echo "Para detener el proceso se tiene que esperar a que haga las iteraciones definidas, o bien puede hacerlo con el comando stop asi:"
+			echo -e "\n\t. ./stop.sh"
 
 			loguearINFO "Se lanzo el proceso con id: "$PROCESOID "start"
+			loguearINFO "Hora de cierre:"$HCIERRE "start"
 
 			export HAYSTART=""
 
@@ -317,4 +334,4 @@ else
 	fi
 fi
 
-echo -e "\n" >> $dir_log
+echo -e "\n" >> "$dir_log"

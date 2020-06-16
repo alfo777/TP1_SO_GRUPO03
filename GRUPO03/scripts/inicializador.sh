@@ -313,8 +313,15 @@ function loguearERROR()
 	elif [ ! -d "$DIRPROC" ]
 	then
 		dir_log="$dir_actual/inicializador.log"
-	else
+
+	elif [ -f "$DIRPROC/inicializador.log" ]
+	then
 		dir_log="$DIRPROC/inicializador.log"
+		
+		if [ -f "$dir_actual/inicializador.log" ]
+		then
+			rm "$dir_actual/inicializador.log"
+		fi
 	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-ERR-"$1"-"$2
@@ -333,8 +340,16 @@ function loguearINFO()
 	elif [ ! -d "$DIRPROC" ]
 	then
 		dir_log="$dir_actual/inicializador.log"
-	else
+
+	elif [ -f "$DIRPROC/inicializador.log" ]
+	then
+
 		dir_log="$DIRPROC/inicializador.log"
+
+		if [ -f "$dir_actual/inicializador.log" ]
+		then
+			rm "$dir_actual/inicializador.log"
+		fi
 	fi
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
@@ -352,9 +367,18 @@ function loguearALE()
 	elif [ ! -d "$DIRPROC" ]
 	then
 		dir_log="$dir_actual/inicializador.log"
-	else
+
+	elif [ -f "$DIRPROC/inicializador.log" ]
+	then
+
 		dir_log="$DIRPROC/inicializador.log"
+
+		if [ -f "$dir_actual/inicializador.log" ]
+		then
+			rm "$dir_actual/inicializador.log"
+		fi
 	fi
+
 	local fecha=`date +%Y-%m-%d"  "%T`
 	local linea="[ "$fecha" ]-INF-"$1"-"$2
 
@@ -452,6 +476,18 @@ else
 				#LUEGO SE CREA LA VARIABLE HAYAMBIENTE, ESTA INDICA QUE EL AMBIENTE SE LEVANTO.
 
 				export HAYAMBIENTE=true
+				loguearINFO "Se exportan las variables de ambiente" "inicializador"
+
+				export GRUPO
+				export DIRINST
+				export DIRBIN
+				export DIRTAB
+				export DIRNOV
+				export DIROK
+				export DIRNOK
+				export DIRPROC
+				export DIRSAL
+				export HCIERRE
 
 
 				loguearINFO "El ambiente para lanzar el proceso ya fue levantado. inicializacion exitosa" "inicializador"
