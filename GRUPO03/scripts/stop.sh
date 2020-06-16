@@ -26,7 +26,7 @@ else
 	then
 		echo "El ambiente del sistema no ha sido lanzado todavia, el proceso no puede lanzarse."
 	else
-		id=`ps | grep 'proceso.sh$'`
+		id=`ps -C proceso.sh | grep 'proceso.sh$'`
 
 		PROCESOID=`echo $id | cut -d " " -f 1 `
 
