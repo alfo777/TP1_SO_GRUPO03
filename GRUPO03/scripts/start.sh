@@ -287,7 +287,7 @@ else
 		echo -e "\nEl ambiente del sistema no ha sido lanzado todavia, el proceso no puede lanzarse."
 	else
 
-		PROCESOID=`ps | grep 'proceso.sh$'`
+		PROCESOID=`ps -C proceso.sh | grep 'proceso.sh$'`
 
 		id=`echo $PROCESOID | cut -d " " -f 1 `
 
@@ -310,7 +310,7 @@ else
 
 			export HAYSTART=true
 
-			./proceso.sh &
+			./proceso.sh & 
 
 			
 			PROCESOID=`ps | grep 'proceso.sh$'`

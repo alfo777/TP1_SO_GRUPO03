@@ -460,7 +460,6 @@ function validar_registro(){
 		then
 			hay_campo_7=0
 			motivo_fi=$motivo_fi" isO38_cAuthorizationResponse, "
-		else
 		fi
 		let "pos=$pos+1"
 
